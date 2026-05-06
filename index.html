@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Project Designs</title>
+    <meta name="description" content="Curated event details, custom signage, and thoughtfully designed pieces to bring your vision to life.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        display: ['"Bebas Neue"', 'Impact', 'sans-serif'],
+                        sans: ['"Inter"', 'Arial', 'sans-serif'],
+                    },
+                    colors: {
+                        cream: '#F7F3EA',
+                        creamSoft: '#FBF8F0',
+                        cardCream: '#F9F4E8',
+                        green900: '#2F5138',
+                        green800: '#3F6848',
+                        green700: '#4E7654',
+                        green600: '#5F8763',
+                        sageLine: '#789177',
+                        sageSoft: '#E8EEE4',
+                        yellow700: '#B89632',
+                        yellow600: '#D7B94E',
+                        yellow500: '#F3D36D',
+                        yellow400: '#F7DA81',
+                        yellow200: '#F9E7B5',
+                        yellowSoft: '#FFF1C8',
+                        textPrimary: '#1F1D1A',
+                        textSecondary: '#4F5A4D',
+                        textMuted: '#6D716A',
+                        textInverse: '#FBF8F0',
+                        borderLight: '#DDD5C6',
+                        borderGreen: '#6F8E72',
+                        borderYellow: '#E8C762',
+                    },
+                    borderRadius: {
+                        'xs': '6px',
+                        'sm': '8px',
+                        'md': '14px',
+                        'lg': '18px',
+                        'xl': '24px',
+                        'pill': '999px',
+                    },
+                    boxShadow: {
+                        'card': '0 12px 30px rgba(47, 81, 56, 0.12)',
+                        'soft': '0 8px 22px rgba(31, 29, 26, 0.08)',
+                        'hover': '0 16px 36px rgba(47, 81, 56, 0.16)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F7F3EA;
+            color: #1F1D1A;
+            overflow-x: hidden;
+        }
+
+        ::selection {
+            background-color: #3F6848;
+            color: #FBF8F0;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F7F3EA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #3F6848;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="antialiased min-h-screen flex flex-col relative">
+
+    <!-- ======================================== -->
+    <!-- BACKGROUND DECORATIVE LINES & CURVES     -->
+    <!-- ======================================== -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        <!-- Left-side grid lines using line.svg -->
+        <img src="icons/line.svg" alt="" class="absolute top-[8%] left-[3%] h-[50%] opacity-[0.35]"
+            style="filter: brightness(0) saturate(100%) invert(55%) sepia(10%) saturate(500%) hue-rotate(80deg) brightness(95%) contrast(90%);">
+
+        <!-- Right-side large quarter arc using circle.svg -->
+        <img src="icons/circle.svg" alt="" class="absolute top-0 right-0 w-[35vw] max-w-[450px] opacity-[0.35]">
+    </div>
+
+    <!-- ======================================== -->
+    <!-- HEADER / NAVBAR                           -->
+    <!-- ======================================== -->
+    <header class="relative z-20 w-full h-[92px] flex items-center justify-between px-6 lg:px-10 max-w-[1280px] mx-auto border-b border-sageLine/25">
+        <!-- Logo -->
+        <div class="flex flex-col items-center justify-center leading-none tracking-wider text-textPrimary w-[145px] text-center flex-shrink-0">
+            <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg" class="w-[145px]">
+                <text x="80" y="22" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="20"
+                    font-weight="600" fill="#1F1D1A" letter-spacing="4">NEW</text>
+                <text x="80" y="48" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="24"
+                    font-weight="600" fill="#1F1D1A" letter-spacing="3">PROJECT</text>
+                <text x="80" y="66" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8"
+                    font-weight="500" fill="#6D716A" letter-spacing="5">DESIGNS</text>
+            </svg>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="hidden lg:flex items-center gap-7 font-sans text-[14px] font-medium text-textPrimary">
+            <a href="index.html"
+                class="text-textPrimary border-b border-green800 pb-[6px] hover:text-green800 transition-colors">Home</a>
+            <a href="signage.html" class="hover:text-green800 transition-colors pb-[6px]">Signage & Event Details</a>
+            <a href="#" class="hover:text-green800 transition-colors pb-[6px]">Rental Products</a>
+            <a href="#" class="hover:text-green800 transition-colors pb-[6px]">Visual Showcase</a>
+            <a href="#" class="hover:text-green800 transition-colors pb-[6px]">About</a>
+            <a href="#" class="hover:text-green800 transition-colors pb-[6px]">Contact</a>
+        </nav>
+
+        <!-- Right Actions -->
+        <div class="flex items-center gap-3 flex-shrink-0">
+            <!-- Email Icon -->
+            <button aria-label="Email" class="w-[38px] h-[38px] rounded-full bg-[#08190F] text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+            </button>
+            <!-- Instagram Icon -->
+            <button aria-label="Instagram" class="w-[38px] h-[38px] rounded-full bg-[#08190F] text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+            </button>
+            <!-- Cart Icon with Badge -->
+            <button aria-label="Cart" class="w-[38px] h-[38px] rounded-full bg-[#08190F] text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity relative">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="8" cy="21" r="1" />
+                    <circle cx="19" cy="21" r="1" />
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                </svg>
+                <span class="absolute -top-1 -right-1 bg-yellow500 text-green800 text-[10px] font-bold w-[18px] h-[18px] flex items-center justify-center rounded-full">0</span>
+            </button>
+            <!-- Custom Inquiry Button -->
+            <a href="#"
+                class="hidden sm:flex items-center gap-2 bg-green800 text-textInverse font-sans text-[14px] font-semibold px-[22px] h-[40px] rounded-pill hover:bg-green900 transition-colors ml-1 tracking-[0.02em]">
+                Custom Inquiry
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow relative z-10">
+        <!-- ======================================== -->
+        <!-- HERO SECTION                              -->
+        <!-- ======================================== -->
+        <section class="max-w-[1280px] mx-auto px-6 pt-20 pb-14 flex flex-col items-center text-center">
+            <span class="font-sans font-bold text-[14px] tracking-[0.18em] text-green800 uppercase mb-4">Shop Event
+                Details</span>
+            <h1
+                class="font-display text-[56px] sm:text-[78px] md:text-[104px] font-normal text-green700 uppercase leading-[0.88] tracking-[0.01em] mb-6">
+                <span class="block">Curated For</span>
+                <span class="block">Your Event</span>
+            </h1>
+            <p class="font-sans text-textSecondary max-w-[560px] text-[18px] leading-[30px]">
+                Thoughtfully designed pieces and custom details<br class="hidden sm:block"> to bring your vision to
+                life.
+            </p>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- PRODUCT CARDS GRID                        -->
+        <!-- ======================================== -->
+        <section class="max-w-[1280px] mx-auto px-6 pb-24">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- =============== CARD 1: SIGNAGE & VINYL =============== -->
+                <a href="signage.html"
+                    class="bg-green700 rounded-xl p-6 flex flex-col relative overflow-hidden group hover:-translate-y-[3px] transition-all duration-300 cursor-pointer min-h-[500px] shadow-card hover:shadow-hover">
+                    <!-- Product Image -->
+                    <div class="rounded-md overflow-hidden mb-7 h-[220px] bg-white/10 relative">
+                        <img src="images/signage.png" alt="Acrylic Welcome Sign"
+                            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <!-- Content -->
+                    <div class="flex flex-col flex-grow relative z-10">
+                        <h2
+                            class="font-display text-[42px] leading-[42px] text-yellow500 uppercase mb-4 tracking-[0.01em]">
+                            Signage & Vinyl</h2>
+                        <p class="font-sans text-textInverse/85 text-[16px] leading-[26px] max-w-[310px] mb-7">
+                            Custom signs, vinyl decals<br>and statement pieces.</p>
+                        <div
+                            class="mt-auto flex items-center text-yellow500 font-sans font-bold tracking-[0.04em] text-[15px] uppercase group-hover:gap-3 transition-all">
+                            Explore
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="ml-3">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Decorative — flower.svg -->
+                    <img src="icons/flower.svg" alt=""
+                        class="absolute -bottom-4 -right-4 w-44 h-auto pointer-events-none opacity-25"
+                        style="filter: brightness(0) saturate(100%) invert(91%) sepia(23%) saturate(1002%) hue-rotate(328deg) brightness(100%) contrast(93%);">
+                </a>
+
+                <!-- =============== CARD 2: EVENT MENUS & PAPER =============== -->
+                <a href="#"
+                    class="bg-yellow500 rounded-xl p-6 flex flex-col relative overflow-hidden group hover:-translate-y-[3px] transition-all duration-300 cursor-pointer min-h-[500px] shadow-card hover:shadow-hover">
+                    <!-- Product Image -->
+                    <div class="rounded-md overflow-hidden mb-7 h-[220px] bg-black/5 relative">
+                        <img src="images/menu.png" alt="Event Menu"
+                            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <!-- Content -->
+                    <div class="flex flex-col flex-grow relative z-10">
+                        <h2
+                            class="font-display text-[42px] leading-[42px] text-green800 uppercase mb-4 tracking-[0.01em]">
+                            Event Menus & Paper</h2>
+                        <p class="font-sans text-green800/75 text-[16px] leading-[26px] max-w-[310px] mb-7">
+                            Custom menus, signage<br>and printed details.</p>
+                        <div
+                            class="mt-auto flex items-center text-green800 font-sans font-bold tracking-[0.04em] text-[15px] uppercase group-hover:gap-3 transition-all">
+                            Explore
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="ml-3">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Decorative — sun.svg -->
+                    <img src="icons/sun.svg" alt=""
+                        class="absolute -bottom-4 -right-4 w-32 h-auto pointer-events-none opacity-25"
+                        style="filter: brightness(0) saturate(100%) invert(36%) sepia(15%) saturate(800%) hue-rotate(80deg) brightness(95%) contrast(90%);">
+                </a>
+
+                <!-- =============== CARD 3: GIFTS & ADD-ONS =============== -->
+                <a href="#"
+                    class="bg-green700 rounded-xl p-6 flex flex-col relative overflow-hidden group hover:-translate-y-[3px] transition-all duration-300 cursor-pointer min-h-[500px] shadow-card hover:shadow-hover">
+                    <!-- Product Image -->
+                    <div class="rounded-md overflow-hidden mb-7 h-[220px] bg-white/10 relative">
+                        <img src="images/gift.png" alt="Gift Bag"
+                            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <!-- Content -->
+                    <div class="flex flex-col flex-grow relative z-10">
+                        <h2
+                            class="font-display text-[42px] leading-[42px] text-yellow500 uppercase mb-4 tracking-[0.01em]">
+                            Gifts & Add-Ons</h2>
+                        <p class="font-sans text-textInverse/85 text-[16px] leading-[26px] max-w-[310px] mb-7">
+                            Curated add-ons and gifts<br>for you and your guests.</p>
+                        <div
+                            class="mt-auto flex items-center text-yellow500 font-sans font-bold tracking-[0.04em] text-[15px] uppercase group-hover:gap-3 transition-all">
+                            Explore
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="ml-3">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Decorative — sun.svg -->
+                    <img src="icons/sun.svg" alt=""
+                        class="absolute -bottom-8 -right-8 w-48 h-auto pointer-events-none opacity-25"
+                        style="filter: brightness(0) saturate(100%) invert(91%) sepia(23%) saturate(1002%) hue-rotate(328deg) brightness(100%) contrast(93%);">
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================================== -->
+    <!-- TRUST STRIP / FOOTER                      -->
+    <!-- ======================================== -->
+    <footer class="bg-green800 min-h-[76px] w-full relative z-20">
+        <div
+            class="max-w-[1280px] mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-center gap-5 md:gap-16 text-textInverse font-sans text-[15px] tracking-[0.06em] font-semibold uppercase">
+            <!-- Custom Made -->
+            <div class="flex items-center gap-[14px]">
+                <img src="icons/flower-stem-green.svg" alt="" class="w-5 h-5" style="filter: brightness(0) invert(1);">
+                Custom Made
+            </div>
+
+            <div class="hidden md:block w-px h-8 bg-textInverse/[0.45]"></div>
+
+            <!-- Event Ready -->
+            <div class="flex items-center gap-[14px]">
+                <img src="icons/sun.svg" alt="" class="w-5 h-5" style="filter: brightness(0) invert(1);">
+                Event Ready
+            </div>
+
+            <div class="hidden md:block w-px h-8 bg-textInverse/[0.45]"></div>
+
+            <!-- Made With Intention -->
+            <div class="flex items-center gap-[14px]">
+                <img src="icons/flower.svg" alt="" class="w-5 h-5" style="filter: brightness(0) invert(1);">
+                Made With Intention
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

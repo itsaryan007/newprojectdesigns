@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinyl Printing | New Project Designs</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        serif: ['"Playfair Display"', 'serif'],
-                        display: ['"Oswald"', 'sans-serif'],
-                        sans: ['"Inter"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        display: ['"Bebas Neue"', 'Impact', 'sans-serif'],
+                        sans: ['"Inter"', 'Arial', 'sans-serif'],
                     },
                     colors: {
-                        brand: {
-                            bg: '#f6f5f0',
-                            green: '#5b745a',
-                            yellow: '#f3d78e',
-                            text: '#2a3329',
-                            muted: '#6a7069',
-                            line: '#d1cfc7'
-                        }
+                        cream: '#F7F3EA',
+                        creamSoft: '#FBF8F0',
+                        cardCream: '#F9F4E8',
+                        green900: '#2F5138',
+                        green800: '#3F6848',
+                        green700: '#4E7654',
+                        green600: '#5F8763',
+                        sageLine: '#789177',
+                        sageSoft: '#E8EEE4',
+                        yellow700: '#B89632',
+                        yellow600: '#D7B94E',
+                        yellow500: '#F3D36D',
+                        yellow400: '#F7DA81',
+                        yellow200: '#F9E7B5',
+                        yellowSoft: '#FFF1C8',
+                        textPrimary: '#1F1D1A',
+                        textSecondary: '#4F5A4D',
+                        textMuted: '#6D716A',
+                        textInverse: '#FBF8F0',
+                        borderLight: '#DDD5C6',
+                        borderGreen: '#6F8E72',
+                        borderYellow: '#E8C762',
+                    },
+                    borderRadius: {
+                        'xs': '6px',
+                        'sm': '8px',
+                        'md': '14px',
+                        'lg': '18px',
+                        'xl': '24px',
+                        'pill': '999px',
+                    },
+                    boxShadow: {
+                        'card': '0 12px 30px rgba(47, 81, 56, 0.12)',
+                        'soft': '0 8px 22px rgba(31, 29, 26, 0.08)',
+                        'hover': '0 16px 36px rgba(47, 81, 56, 0.16)',
                     }
                 }
             }
@@ -31,184 +61,311 @@
     </script>
     <style>
         body {
-            background-color: theme('colors.brand.bg');
-            color: theme('colors.brand.text');
+            background-color: #F7F3EA;
+            color: #1F1D1A;
             overflow-x: hidden;
         }
 
-
+        ::selection {
+            background-color: #3F6848;
+            color: #FBF8F0;
+        }
     </style>
 </head>
-<body class="antialiased min-h-screen flex flex-col relative selection:bg-brand-green selection:text-white">
+
+<body class="antialiased min-h-screen flex flex-col relative selection:bg-green800 selection:text-white">
 
     <!-- Background Decorative Elements -->
     <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
         <!-- Left-side grid lines using line.svg -->
-        <img src="icons/line.svg" alt="" class="absolute top-[8%] left-[3%] h-[50%] opacity-40" style="filter: brightness(0) saturate(100%) invert(87%) sepia(5%) saturate(200%) hue-rotate(20deg) brightness(95%) contrast(90%);">
-        
-        <!-- Right-side large quarter arc using circle.svg -->
-        <img src="icons/circle.svg" alt="" class="absolute top-0 right-0 w-[35vw] max-w-[450px] opacity-40">
+        <img src="illustrations/line.svg" alt="" class="absolute top-[92px] left-0 w-[350px] md:w-[500px] opacity-40 transform -translate-x-[15%]"
+            style="filter: brightness(0) saturate(100%) invert(87%) sepia(5%) saturate(200%) hue-rotate(20deg) brightness(95%) contrast(90%);">
+
     </div>
 
     <!-- Right decorative botanical using flower-stem-green.svg -->
-    <div class="absolute top-0 right-0 pointer-events-none z-0" style="transform: translate(10px, -20px);">
-        <img src="icons/flower-stem-green.svg" alt="" class="w-[220px] h-auto opacity-40" style="transform: scaleX(-1);">
+    <div class="absolute top-[92px] right-0 pointer-events-none z-0" style="transform: translateX(10px);">
+        <img src="illustrations/flower-stem-green.svg" alt="" class="w-[220px] h-auto opacity-40"
+            style="transform: scaleX(-1);">
     </div>
 
     <!-- Header Section -->
-    <header class="relative z-20 w-full h-[100px] flex items-center justify-between px-8 max-w-[1400px] mx-auto border-b border-brand-line/50">
-        <!-- Logo -->
-        <div class="flex flex-col items-center justify-center font-serif leading-none tracking-widest text-[#2a2a2a] w-48 text-center bg-brand-bg py-2">
-            <span class="text-2xl uppercase">New</span>
-            <span class="text-[1.7rem] uppercase mt-1">Project</span>
-            <span class="text-[0.55rem] uppercase tracking-[0.3em] mt-2 font-sans font-medium text-brand-muted">Designs</span>
+    <header class="relative z-20 w-full h-[92px] border-b border-green800/20">
+        <div class="flex items-center justify-between px-6 lg:px-10 max-w-[1280px] mx-auto w-full h-full">
+            <!-- Logo -->
+            <div class="flex flex-col items-center justify-center leading-none tracking-wider text-textPrimary w-[145px] text-center flex-shrink-0">
+            <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg" class="w-[145px]">
+                <text x="80" y="22" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="20"
+                    font-weight="600" fill="#1F1D1A" letter-spacing="4">NEW</text>
+                <text x="80" y="48" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="24"
+                    font-weight="600" fill="#1F1D1A" letter-spacing="3">PROJECT</text>
+                <text x="80" y="66" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8"
+                    font-weight="500" fill="#6D716A" letter-spacing="5">DESIGNS</text>
+            </svg>
         </div>
 
         <!-- Navigation -->
-        <nav class="hidden lg:flex items-center gap-8 font-sans text-sm font-medium text-[#4a4a4a]">
-            <a href="#" class="hover:text-brand-green transition-colors pb-1">Home</a>
-            <a href="#" class="text-brand-text border-b border-brand-text pb-1 hover:text-brand-green transition-colors">Signage & Event Details</a>
-            <a href="#" class="hover:text-brand-green transition-colors pb-1">Rental Products</a>
-            <a href="#" class="hover:text-brand-green transition-colors pb-1">Visual Showcase</a>
-            <a href="#" class="hover:text-brand-green transition-colors pb-1">About</a>
-            <a href="#" class="hover:text-brand-green transition-colors pb-1">Contact</a>
+        <nav class="hidden lg:flex items-center gap-7 font-sans text-[14px] font-medium text-textPrimary">
+            <a href="index.html" class="hover:text-green800 transition-colors pb-[6px]">Home</a>
+            <a href="signage.html" class="hover:text-green800 transition-colors pb-[6px]">Signage & Event Details</a>
+            <a href="vinyl.html"
+                class="text-textPrimary border-b border-green800 pb-[6px] hover:text-green800 transition-colors">Vinyl Printing</a>
         </nav>
 
         <!-- Right Actions -->
-        <div class="flex items-center gap-6">
-            <button aria-label="Email" class="text-brand-text hover:text-brand-green transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        <div class="flex items-center gap-3 flex-shrink-0">
+            <button aria-label="Email"
+                class="w-[38px] h-[38px] rounded-full bg-green800 text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
             </button>
-            <button aria-label="Instagram" class="text-brand-text hover:text-brand-green transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            <button aria-label="Instagram"
+                class="w-[38px] h-[38px] rounded-full bg-green800 text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
             </button>
-            <button aria-label="Cart" class="text-brand-text hover:text-brand-green transition-colors relative">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
-                <span class="absolute -top-2 -right-2 bg-brand-yellow text-brand-green text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
+            <button aria-label="Cart"
+                class="w-[38px] h-[38px] rounded-full bg-green800 text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity relative">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="8" cy="21" r="1" />
+                    <circle cx="19" cy="21" r="1" />
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                </svg>
+                <span
+                    class="absolute -top-1 -right-1 bg-yellow500 text-green800 text-[10px] font-bold w-[18px] h-[18px] flex items-center justify-center rounded-full">0</span>
             </button>
-            <a href="#" class="hidden sm:flex items-center gap-2 bg-[#6b7b6c] text-white font-sans text-xs font-medium px-5 py-2.5 rounded-full hover:bg-opacity-90 transition-all shadow-sm ml-2">
+            <a href="#"
+                class="hidden sm:flex items-center gap-2 bg-green800 text-textInverse font-sans text-[14px] font-semibold px-[22px] h-[40px] rounded-pill hover:bg-green900 transition-colors ml-1 tracking-[0.02em]">
                 Custom Inquiry
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                </svg>
             </a>
+        </div>
         </div>
     </header>
 
+
     <main class="flex-grow relative z-10 w-full max-w-[1100px] mx-auto px-6 pt-10 pb-24">
-        
+
         <!-- Back Link -->
         <div class="mb-6 relative flex justify-start pl-[5vw]">
-            <a href="#" class="text-brand-muted hover:text-brand-green transition-colors font-sans text-[13px] flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg> 
+            <a href="signage.html"
+                class="text-textMuted hover:text-green800 transition-colors font-sans text-[13px] flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m15 18-6-6 6-6" />
+                </svg>
                 Back to Shop
             </a>
         </div>
 
         <!-- Hero Section -->
         <div class="text-center mb-16 flex flex-col items-center">
-            <span class="font-sans font-bold text-[11px] tracking-[0.25em] text-brand-muted uppercase mb-5">Vinyl Printing</span>
-            <h1 class="font-serif text-[3.5rem] md:text-[4.5rem] text-[#2a2a2a] leading-[1.1] mb-6">
+            <span class="font-sans font-bold text-[14px] tracking-[0.18em] text-green800 uppercase mb-5">Vinyl
+                Printing</span>
+            <h1 class="font-serif text-[3.5rem] md:text-[4.5rem] text-textPrimary leading-[1.1] mb-6">
                 Custom Vinyl Prints,<br>Made for Your Event
             </h1>
-            <div class="w-12 h-px bg-brand-line mb-6"></div>
-            <p class="font-sans text-brand-muted text-[15px] leading-relaxed max-w-md mx-auto">
+            <div class="w-16 h-px bg-green800 mb-6"></div>
+            <p class="font-sans text-textSecondary text-[18px] leading-[30px] max-w-md mx-auto">
                 Choose your size, upload your artwork,<br>and we'll handle the rest with precision and care.
             </p>
         </div>
 
         <!-- Main Content Blocks -->
         <div class="max-w-[1000px] mx-auto flex flex-col gap-10">
-            
+
             <!-- Step 1 -->
             <div>
-                <h2 class="flex items-center gap-4 font-serif text-[1.35rem] text-[#333] mb-6">
-                    <span class="w-[26px] h-[26px] rounded-full bg-[#5b745a] text-white flex items-center justify-center font-sans text-xs font-medium">1</span>
+                <h2 class="flex items-center gap-4 font-serif text-[1.35rem] text-textPrimary mb-6">
+                    <span
+                        class="w-[26px] h-[26px] rounded-full bg-green800 text-white flex items-center justify-center font-sans text-xs font-medium">1</span>
                     Select Your Size
                 </h2>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-                    <!-- Size 1 (Selected) -->
-                    <div class="bg-[#f5e6b1] rounded-2xl overflow-hidden flex flex-col border-[3px] border-[#5b745a] relative cursor-pointer shadow-sm group h-[380px]">
-                        <div class="absolute top-3 right-3 bg-[#5b745a] text-white rounded-full w-[26px] h-[26px] flex items-center justify-center z-10 shadow-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    <!-- Size 1 -->
+                    <div onclick="selectSizeCard(this)"
+                        class="size-card bg-yellow200 rounded-2xl overflow-hidden flex flex-col border-[3px] border-transparent relative cursor-pointer shadow-sm group hover:border-green800/30 transition-colors h-[380px]">
+                        <div
+                            class="checkmark-badge hidden absolute top-3 right-3 bg-green800 text-white rounded-full w-[26px] h-[26px] items-center justify-center z-10 shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
                         </div>
                         <div class="h-48 relative bg-white/20">
                             <img src="images/signage.png" class="w-full h-full object-cover" alt="2x2 Vinyl">
                         </div>
                         <div class="p-5 flex flex-col items-center justify-center flex-grow text-center">
-                            <h3 class="font-serif text-[1.7rem] text-[#2a2a2a] mb-1">2' x 2'</h3>
-                            <p class="font-sans text-[13px] text-[#2a2a2a]/80 mb-4">$80 (min.)</p>
-                            <div class="flex items-center gap-2 text-[#2a2a2a] text-[13px] font-medium mt-auto transition-all group-hover:gap-3">
-                                Select this size <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            <h3 class="font-serif text-[1.7rem] text-textPrimary mb-1">2' x 2'</h3>
+                            <p class="font-sans text-[13px] text-textPrimary/80 mb-4">$80 (min.)</p>
+                            <div
+                                class="flex items-center gap-2 text-textPrimary text-[13px] font-medium mt-auto transition-all group-hover:gap-3">
+                                Select this size <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
                             </div>
                         </div>
                     </div>
 
                     <!-- Size 2 -->
-                    <div class="bg-[#f5e6b1] rounded-2xl overflow-hidden flex flex-col border-[3px] border-transparent relative cursor-pointer shadow-sm group hover:border-[#5b745a]/30 transition-colors h-[380px]">
+                    <div onclick="selectSizeCard(this)"
+                        class="size-card bg-yellow200 rounded-2xl overflow-hidden flex flex-col border-[3px] border-transparent relative cursor-pointer shadow-sm group hover:border-green800/30 transition-colors h-[380px]">
+                        <div
+                            class="checkmark-badge hidden absolute top-3 right-3 bg-green800 text-white rounded-full w-[26px] h-[26px] items-center justify-center z-10 shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
                         <div class="h-48 relative bg-white/20">
                             <img src="images/menu.png" class="w-full h-full object-cover" alt="2x3 Vinyl">
                         </div>
                         <div class="p-5 flex flex-col items-center justify-center flex-grow text-center">
-                            <h3 class="font-serif text-[1.7rem] text-[#2a2a2a] mb-1">2' x 3'</h3>
-                            <p class="font-sans text-[13px] text-[#2a2a2a]/80 mb-4">$95 (min.)</p>
-                            <div class="flex items-center gap-2 text-[#2a2a2a] text-[13px] font-medium mt-auto transition-all group-hover:gap-3">
-                                Select this size <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            <h3 class="font-serif text-[1.7rem] text-textPrimary mb-1">2' x 3'</h3>
+                            <p class="font-sans text-[13px] text-textPrimary/80 mb-4">$95 (min.)</p>
+                            <div
+                                class="flex items-center gap-2 text-textPrimary text-[13px] font-medium mt-auto transition-all group-hover:gap-3">
+                                Select this size <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
                             </div>
                         </div>
                     </div>
 
                     <!-- Size 3 -->
-                    <div class="bg-[#f5e6b1] rounded-2xl overflow-hidden flex flex-col border-[3px] border-transparent relative cursor-pointer shadow-sm group hover:border-[#5b745a]/30 transition-colors h-[380px]">
+                    <div onclick="selectSizeCard(this)"
+                        class="size-card bg-yellow200 rounded-2xl overflow-hidden flex flex-col border-[3px] border-transparent relative cursor-pointer shadow-sm group hover:border-green800/30 transition-colors h-[380px]">
+                        <div
+                            class="checkmark-badge hidden absolute top-3 right-3 bg-green800 text-white rounded-full w-[26px] h-[26px] items-center justify-center z-10 shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
                         <div class="h-48 relative bg-white/20">
-                            <img src="images/acrylic_wedding_sign.png" class="w-full h-full object-cover" alt="3x4 Vinyl">
+                            <img src="images/acrylic_wedding_sign.png" class="w-full h-full object-cover"
+                                alt="3x4 Vinyl">
                         </div>
                         <div class="p-5 flex flex-col items-center justify-center flex-grow text-center">
-                            <h3 class="font-serif text-[1.7rem] text-[#2a2a2a] mb-1">3' x 4'</h3>
-                            <p class="font-sans text-[13px] text-[#2a2a2a]/80 mb-4">$144</p>
-                            <div class="flex items-center gap-2 text-[#2a2a2a] text-[13px] font-medium mt-auto transition-all group-hover:gap-3">
-                                Select this size <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            <h3 class="font-serif text-[1.7rem] text-textPrimary mb-1">3' x 4'</h3>
+                            <p class="font-sans text-[13px] text-textPrimary/80 mb-4">$144</p>
+                            <div
+                                class="flex items-center gap-2 text-textPrimary text-[13px] font-medium mt-auto transition-all group-hover:gap-3">
+                                Select this size <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
                             </div>
                         </div>
                     </div>
 
                     <!-- Size 4 -->
-                    <div class="bg-[#f5e6b1] rounded-2xl overflow-hidden flex flex-col border-[3px] border-transparent relative cursor-pointer shadow-sm group hover:border-[#5b745a]/30 transition-colors h-[380px]">
+                    <div onclick="selectSizeCard(this)"
+                        class="size-card bg-yellow200 rounded-2xl overflow-hidden flex flex-col border-[3px] border-transparent relative cursor-pointer shadow-sm group hover:border-green800/30 transition-colors h-[380px]">
+                        <div
+                            class="checkmark-badge hidden absolute top-3 right-3 bg-green800 text-white rounded-full w-[26px] h-[26px] items-center justify-center z-10 shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
                         <div class="h-48 relative bg-white/20">
                             <img src="images/gift.png" class="w-full h-full object-cover" alt="4x4 Vinyl">
                         </div>
                         <div class="p-5 flex flex-col items-center justify-center flex-grow text-center">
-                            <h3 class="font-serif text-[1.7rem] text-[#2a2a2a] mb-1">4' x 4'</h3>
-                            <p class="font-sans text-[13px] text-[#2a2a2a]/80 mb-4">$192</p>
-                            <div class="flex items-center gap-2 text-[#2a2a2a] text-[13px] font-medium mt-auto transition-all group-hover:gap-3">
-                                Select this size <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            <h3 class="font-serif text-[1.7rem] text-textPrimary mb-1">4' x 4'</h3>
+                            <p class="font-sans text-[13px] text-textPrimary/80 mb-4">$192</p>
+                            <div
+                                class="flex items-center gap-2 text-textPrimary text-[13px] font-medium mt-auto transition-all group-hover:gap-3">
+                                Select this size <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
                             </div>
                         </div>
                     </div>
 
                     <!-- Size 5 -->
-                    <div class="bg-[#f5e6b1] rounded-2xl overflow-hidden flex flex-col border-[3px] border-transparent relative cursor-pointer shadow-sm group hover:border-[#5b745a]/30 transition-colors h-[380px]">
+                    <div onclick="selectSizeCard(this)"
+                        class="size-card bg-yellow200 rounded-2xl overflow-hidden flex flex-col border-[3px] border-transparent relative cursor-pointer shadow-sm group hover:border-green800/30 transition-colors h-[380px]">
+                        <div
+                            class="checkmark-badge hidden absolute top-3 right-3 bg-green800 text-white rounded-full w-[26px] h-[26px] items-center justify-center z-10 shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
                         <div class="h-48 relative bg-white/20">
                             <img src="images/signage.png" class="w-full h-full object-cover" alt="4x6 Vinyl">
                         </div>
                         <div class="p-5 flex flex-col items-center justify-center flex-grow text-center">
-                            <h3 class="font-serif text-[1.7rem] text-[#2a2a2a] mb-1">4' x 6'</h3>
-                            <p class="font-sans text-[13px] text-[#2a2a2a]/80 mb-4">$288</p>
-                            <div class="flex items-center gap-2 text-[#2a2a2a] text-[13px] font-medium mt-auto transition-all group-hover:gap-3">
-                                Select this size <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            <h3 class="font-serif text-[1.7rem] text-textPrimary mb-1">4' x 6'</h3>
+                            <p class="font-sans text-[13px] text-textPrimary/80 mb-4">$288</p>
+                            <div
+                                class="flex items-center gap-2 text-textPrimary text-[13px] font-medium mt-auto transition-all group-hover:gap-3">
+                                Select this size <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
                             </div>
                         </div>
                     </div>
 
                     <!-- Size 6 -->
-                    <div class="bg-[#f5e6b1] rounded-2xl overflow-hidden flex flex-col border-[3px] border-transparent relative cursor-pointer shadow-sm group hover:border-[#5b745a]/30 transition-colors h-[380px]">
+                    <div onclick="selectSizeCard(this)"
+                        class="size-card bg-yellow200 rounded-2xl overflow-hidden flex flex-col border-[3px] border-transparent relative cursor-pointer shadow-sm group hover:border-green800/30 transition-colors h-[380px]">
+                        <div
+                            class="checkmark-badge hidden absolute top-3 right-3 bg-green800 text-white rounded-full w-[26px] h-[26px] items-center justify-center z-10 shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
                         <div class="h-48 relative bg-white/20">
                             <img src="images/menu.png" class="w-full h-full object-cover" alt="4x8 Vinyl">
                         </div>
                         <div class="p-5 flex flex-col items-center justify-center flex-grow text-center">
-                            <h3 class="font-serif text-[1.7rem] text-[#2a2a2a] mb-1">4' x 8'</h3>
-                            <p class="font-sans text-[13px] text-[#2a2a2a]/80 mb-4">$384</p>
-                            <div class="flex items-center gap-2 text-[#2a2a2a] text-[13px] font-medium mt-auto transition-all group-hover:gap-3">
-                                Select this size <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            <h3 class="font-serif text-[1.7rem] text-textPrimary mb-1">4' x 8'</h3>
+                            <p class="font-sans text-[13px] text-textPrimary/80 mb-4">$384</p>
+                            <div
+                                class="flex items-center gap-2 text-textPrimary text-[13px] font-medium mt-auto transition-all group-hover:gap-3">
+                                Select this size <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -217,41 +374,83 @@
 
             <!-- Step 2 -->
             <div class="mt-2">
-                <h2 class="flex items-center gap-4 font-serif text-[1.35rem] text-[#333] mb-6">
-                    <span class="w-[26px] h-[26px] rounded-full bg-[#5b745a] text-white flex items-center justify-center font-sans text-xs font-medium">2</span>
+                <h2 class="flex items-center gap-4 font-serif text-[1.35rem] text-textPrimary mb-6">
+                    <span
+                        class="w-[26px] h-[26px] rounded-full bg-green800 text-white flex items-center justify-center font-sans text-xs font-medium">2</span>
                     Upload Your Artwork
                 </h2>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
                     <!-- Dropzone -->
-                    <div class="md:col-span-2 border border-dashed border-[#5b745a]/40 rounded-xl flex flex-col items-center justify-center py-12 px-6 text-center hover:bg-black/[0.02] transition-colors cursor-pointer">
-                        <svg class="w-10 h-10 text-[#5b745a] mb-3 opacity-80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <div id="dropzone" onclick="document.getElementById('artworkUpload').click()"
+                        class="md:col-span-2 border border-dashed border-green800/40 rounded-xl flex flex-col items-center justify-center py-12 px-6 text-center hover:bg-green800/5 transition-colors cursor-pointer relative">
+                        <input type="file" id="artworkUpload" class="hidden" accept=".pdf,.ai,.eps,.png,.jpg,.jpeg">
+                        <svg id="uploadIcon" class="w-10 h-10 text-[#3F6848] mb-3 opacity-80 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                            stroke-linecap="round" stroke-linejoin="round">
                             <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
                             <path d="M12 12v9"></path>
                             <path d="m8 16 4-4 4 4"></path>
                         </svg>
-                        <p class="font-sans text-[#333] text-[15px] mb-1">Drag & drop your file here</p>
-                        <p class="font-sans text-brand-muted text-xs mb-3">or</p>
-                        <button class="bg-[#5b745a] text-white px-5 py-2 rounded-full font-sans text-[13px] font-medium hover:bg-opacity-90 transition-opacity mb-4">Choose File</button>
-                        <p class="font-sans text-brand-muted text-[11px]">We review all files before printing to ensure best quality.</p>
+                        <p id="fileNameDisplay" class="font-sans text-textPrimary text-[15px] mb-1">Drag & drop your file here</p>
+                        <p id="orText" class="font-sans text-textMuted text-xs mb-3 transition-opacity duration-300">or</p>
+                        <div class="flex items-center justify-center gap-3 mb-4 z-10 relative">
+                            <button id="chooseFileBtn" type="button"
+                                class="bg-green800 text-white px-5 py-2 rounded-full font-sans text-[13px] font-medium hover:bg-opacity-90 transition-opacity pointer-events-none">Choose File</button>
+                            <button id="removeFileBtn" type="button" onclick="removeFile(event)"
+                                class="hidden text-textMuted hover:text-red-600 transition-colors bg-black/5 hover:bg-red-50 px-4 py-2 rounded-full text-[13px] font-medium font-sans border border-transparent hover:border-red-600/30">Remove</button>
+                        </div>
+                        <p id="reviewText" class="font-sans text-textMuted text-[11px]">We review all files before printing to ensure
+                            best quality.</p>
                     </div>
 
                     <!-- File Guidelines -->
-                    <div class="bg-[#e9e6dc] rounded-xl p-6 flex flex-col">
+                    <div class="bg-cardCream rounded-xl p-6 flex flex-col">
                         <div class="flex items-start gap-3 mb-5">
-                            <svg class="w-6 h-6 text-[#5b745a] mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                            <h3 class="font-sans font-bold text-[11px] tracking-widest text-[#333] uppercase mt-1">File Guidelines</h3>
+                            <svg class="w-6 h-6 text-[#3F6848] mt-0.5" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" y1="13" x2="8" y2="13" />
+                                <line x1="16" y1="17" x2="8" y2="17" />
+                                <polyline points="10 9 9 9 8 9" />
+                            </svg>
+                            <h3 class="font-sans font-bold text-[11px] tracking-widest text-green800 uppercase mt-1">
+                                File Guidelines</h3>
                         </div>
-                        <ul class="space-y-2.5 font-sans text-[12px] text-[#444] mb-6">
-                            <li class="flex items-start gap-2"><svg class="w-3.5 h-3.5 text-[#5b745a] mt-[2px] shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> High resolution (300 DPI)</li>
-                            <li class="flex items-start gap-2"><svg class="w-3.5 h-3.5 text-[#5b745a] mt-[2px] shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> PDF, PNG, or JPEG</li>
-                            <li class="flex items-start gap-2"><svg class="w-3.5 h-3.5 text-[#5b745a] mt-[2px] shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> CMYK color mode preferred</li>
-                            <li class="flex items-start gap-2"><svg class="w-3.5 h-3.5 text-[#5b745a] mt-[2px] shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Convert text to outlines</li>
+                        <ul class="space-y-2.5 font-sans text-[12px] text-textPrimary mb-6">
+                            <li class="flex items-start gap-2"><svg class="w-3.5 h-3.5 text-[#3F6848] mt-[2px] shrink-0"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg> High resolution (300 DPI)</li>
+                            <li class="flex items-start gap-2"><svg class="w-3.5 h-3.5 text-[#3F6848] mt-[2px] shrink-0"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg> PDF, PNG, or JPEG</li>
+                            <li class="flex items-start gap-2"><svg class="w-3.5 h-3.5 text-[#3F6848] mt-[2px] shrink-0"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg> CMYK color mode preferred</li>
+                            <li class="flex items-start gap-2"><svg class="w-3.5 h-3.5 text-[#3F6848] mt-[2px] shrink-0"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg> Convert text to outlines</li>
                         </ul>
-                        <div class="mt-auto">
-                            <p class="font-sans text-[12px] text-[#444] leading-relaxed">
-                                Need a custom size?<br>
-                                <a href="#" class="border-b border-[#444] hover:text-[#5b745a] transition-colors pb-0.5">Email</a> or message us and we'll create a custom order just for you.
+                        <div class="mt-auto pt-5 border-t border-borderLight">
+                            <p class="font-sans text-[12px] text-textPrimary leading-relaxed">
+                                <span class="text-green800 font-medium text-[13px] block mb-1">Need a custom size?</span>
+                                <a href="#"
+                                    class="border-b border-textPrimary hover:text-green800 transition-colors pb-0.5">Email</a>
+                                or message us and we'll create a custom order just for you.
                             </p>
                         </div>
                     </div>
@@ -259,49 +458,68 @@
             </div>
 
             <!-- Rush Production Toggle -->
-            <div class="bg-[#f5e6b1] rounded-xl px-5 py-4 flex items-center justify-between">
+            <div class="bg-yellow200 rounded-xl px-5 py-4 flex items-center justify-between">
                 <div class="flex items-center gap-4">
-                    <svg class="w-5 h-5 text-[#333]/80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    <img src="icons/rushproduction.svg" alt="" class="w-5 h-5 opacity-80">
                     <div>
-                        <p class="font-sans text-[#333] font-medium text-[14px]">Rush Production (+30%)</p>
-                        <p class="font-sans text-[#333]/70 text-[12px]">3-5 day turnaround available.</p>
+                        <p class="font-sans text-textPrimary font-medium text-[14px]">Rush Production (+30%)</p>
+                        <p class="font-sans text-textPrimary/70 text-[12px]">3-5 day turnaround available.</p>
                     </div>
                 </div>
                 <!-- Toggle Switch -->
-                <button class="w-[42px] h-[22px] rounded-full bg-white/60 relative cursor-pointer shadow-inner">
-                    <div class="absolute left-1 top-1 w-[14px] h-[14px] bg-white rounded-full shadow-sm"></div>
+                <button id="rushToggleBtn" type="button" aria-pressed="false" class="w-[42px] h-[22px] rounded-full bg-[#D8CEAA] relative cursor-pointer shadow-inner transition-colors duration-300">
+                    <div id="rushToggleThumb" class="absolute left-1 top-1 w-[14px] h-[14px] bg-white rounded-full shadow-sm transition-all duration-300"></div>
                 </button>
             </div>
 
             <!-- Add to Cart Button -->
-            <button class="w-full bg-[#566c54] text-white rounded-xl py-3.5 flex items-center justify-center gap-2 hover:bg-opacity-90 transition-opacity font-sans font-medium text-[15px] shadow-sm">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+            <button
+                class="w-full bg-green800 text-textInverse rounded-xl py-3.5 flex items-center justify-center gap-2 hover:bg-opacity-90 transition-opacity font-sans font-medium text-[15px] shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="8" cy="21" r="1" />
+                    <circle cx="19" cy="21" r="1" />
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                </svg>
                 Add to Cart
             </button>
 
             <!-- Before You Order -->
-            <div class="bg-[#e9e6dc] rounded-xl py-6 px-8 flex flex-col md:flex-row items-center justify-between relative mt-2">
+            <div
+                class="bg-cardCream border border-borderLight rounded-xl py-6 px-8 flex flex-col md:flex-row items-center justify-between relative mt-2">
                 <!-- Icon on left -->
-                <div class="absolute -left-5 top-1/2 -translate-y-1/2 w-[42px] h-[42px] bg-[#566c54] rounded-full hidden md:flex items-center justify-center text-white shadow-sm border-[3px] border-[#f6f5f0]">
-                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                <div
+                    class="absolute -left-5 top-1/2 -translate-y-1/2 w-[42px] h-[42px] bg-green800 rounded-full hidden md:flex items-center justify-center text-white shadow-sm border-[3px] border-[#F7F3EA]">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                    </svg>
                 </div>
-                
-                <div class="w-full md:w-[150px] md:pl-5 mb-5 md:mb-0 text-center md:text-left flex-shrink-0">
-                    <h3 class="font-serif text-[17px] text-[#333]">Before You Order</h3>
+
+                <div class="w-full md:w-[170px] md:pl-5 mb-5 md:mb-0 text-center md:text-left flex-shrink-0 md:border-r border-borderLight pr-4">
+                    <h3 class="font-serif text-[17px] text-textPrimary">Before You Order</h3>
                 </div>
-                
+
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-0 w-full flex-grow">
-                    <div class="px-4 py-2 border-r border-[#d1cfc7] text-center flex flex-col items-center justify-center">
-                        <p class="font-sans text-[11px] text-[#444] leading-relaxed">Minimum $95<br>per order.</p>
+                    <div
+                        class="px-4 py-2 border-r border-borderLight text-center flex flex-col items-center justify-center">
+                        <p class="font-sans text-[11px] text-textPrimary leading-relaxed">Minimum $95<br>per order.</p>
                     </div>
-                    <div class="px-4 py-2 border-r border-[#d1cfc7] text-center flex flex-col items-center justify-center">
-                        <p class="font-sans text-[11px] text-[#444] leading-relaxed">7-day standard<br>turnaround.</p>
+                    <div
+                        class="px-4 py-2 border-r border-borderLight text-center flex flex-col items-center justify-center">
+                        <p class="font-sans text-[11px] text-textPrimary leading-relaxed">7-day standard<br>turnaround.
+                        </p>
                     </div>
-                    <div class="px-4 py-2 border-r border-[#d1cfc7] text-center flex flex-col items-center justify-center">
-                        <p class="font-sans text-[11px] text-[#444] leading-relaxed">Pickup at our location<br>in Anaheim, CA.</p>
+                    <div
+                        class="px-4 py-2 border-r border-borderLight text-center flex flex-col items-center justify-center">
+                        <p class="font-sans text-[11px] text-textPrimary leading-relaxed">Pickup at our location<br>in
+                            Anaheim, CA.</p>
                     </div>
                     <div class="px-4 py-2 text-center flex flex-col items-center justify-center">
-                        <p class="font-sans text-[11px] text-[#444] leading-relaxed">Questions? Visit our<br><a href="#" class="border-b border-[#444] hover:text-[#5b745a] pb-[1px]">contact page.</a></p>
+                        <p class="font-sans text-[11px] text-textPrimary leading-relaxed">Questions? Visit our<br><a
+                                href="#" class="border-b border-textPrimary hover:text-green800 pb-[1px]">contact
+                                page.</a></p>
                     </div>
                 </div>
             </div>
@@ -310,57 +528,271 @@
 
         <!-- Real Projects Gallery -->
         <div class="mt-24 max-w-[1000px] mx-auto text-center">
-            <h2 class="font-serif text-[1.7rem] text-[#333] mb-1">Real Projects Using Our Vinyl Prints</h2>
-            <p class="font-sans text-[13px] text-brand-muted mb-8">See what's possible with custom vinyl printing.</p>
-            
+            <h2 class="font-serif text-[1.7rem] font-normal tracking-[0.06em] text-textPrimary mb-1">Real Projects Using
+                Our Vinyl Prints</h2>
+            <p class="font-sans text-[13px] text-textMuted mb-8">See what's possible with custom vinyl printing.</p>
+
             <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
                 <!-- Gallery Images -->
                 <div class="aspect-[4/5] rounded-xl overflow-hidden bg-white/20">
-                    <img src="images/vinylimage/vinyl-print1.jpeg" class="w-full h-full object-cover" alt="Vinyl wall text installation">
+                    <img src="images/vinylimage/vinyl-print1.jpeg" class="w-full h-full object-cover cursor-pointer transition-opacity hover:opacity-90"
+                        alt="Vinyl wall text installation" onclick="openModal(this.src)">
                 </div>
                 <div class="aspect-[4/5] rounded-xl overflow-hidden bg-white/20">
-                    <img src="images/vinylimage/vinylprint2.jpeg" class="w-full h-full object-cover" alt="Custom vinyl signage">
+                    <img src="images/vinylimage/vinylprint2.jpeg" class="w-full h-full object-cover cursor-pointer transition-opacity hover:opacity-90"
+                        alt="Custom vinyl signage" onclick="openModal(this.src)">
                 </div>
                 <div class="aspect-[4/5] rounded-xl overflow-hidden bg-white/20">
-                    <img src="images/vinylimage/vinylprint3.jpeg" class="w-full h-full object-cover" alt="Event vinyl lettering">
+                    <img src="images/vinylimage/vinylprint3.jpeg" class="w-full h-full object-cover cursor-pointer transition-opacity hover:opacity-90"
+                        alt="Event vinyl lettering" onclick="openModal(this.src)">
                 </div>
                 <div class="aspect-[4/5] rounded-xl overflow-hidden bg-white/20">
-                    <img src="images/vinylimage/vinylprint4.jpeg" class="w-full h-full object-cover" alt="Vinyl print project">
+                    <img src="images/vinylimage/vinylprint4.jpeg" class="w-full h-full object-cover cursor-pointer transition-opacity hover:opacity-90"
+                        alt="Vinyl print project" onclick="openModal(this.src)">
                 </div>
                 <div class="aspect-[4/5] rounded-xl overflow-hidden bg-white/20">
-                    <img src="images/vinylimage/vinylprint5.jpeg" class="w-full h-full object-cover" alt="Custom vinyl event display">
+                    <img src="images/vinylimage/vinylprint5.jpeg" class="w-full h-full object-cover cursor-pointer transition-opacity hover:opacity-90"
+                        alt="Custom vinyl event display" onclick="openModal(this.src)">
                 </div>
             </div>
         </div>
 
     </main>
-    
+
     <!-- Footer Bar -->
-    <footer class="bg-[#5b745a] py-6 w-full relative z-20 mt-auto">
-        <div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-16 text-white font-sans text-xs tracking-[0.15em] font-medium uppercase">
+    <footer class="bg-green800 min-h-[76px] w-full relative z-20 mt-auto">
+        <div
+            class="max-w-[1280px] mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-center gap-5 md:gap-16 text-textInverse font-sans text-[15px] tracking-[0.06em] font-normal uppercase">
             <!-- Item 1 -->
             <div class="flex items-center gap-3 opacity-90">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                <img src="icons/custom-made.svg" alt="" class="w-[18px] h-[18px]"
+                    style="filter: brightness(0) invert(1);">
                 Custom Made
             </div>
-            
+
             <div class="hidden md:block w-[1px] h-4 bg-white/20"></div>
-            
+
             <!-- Item 2 -->
             <div class="flex items-center gap-3 opacity-90">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/></svg>
+                <img src="icons/event-ready.svg" alt="" class="w-[18px] h-[18px]"
+                    style="filter: brightness(0) invert(1);">
                 Event Ready
             </div>
-            
+
             <div class="hidden md:block w-[1px] h-4 bg-white/20"></div>
-            
+
             <!-- Item 3 -->
             <div class="flex items-center gap-3 opacity-90">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+                <img src="icons/intention.svg" alt="" class="w-[18px] h-[18px]"
+                    style="filter: brightness(0) invert(1);">
                 Made With Intention
             </div>
         </div>
     </footer>
 
+    <!-- Image Modal -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/80 flex items-center justify-center p-4 backdrop-blur-sm transition-opacity opacity-0 duration-300" onclick="closeModal()">
+        <div class="relative max-w-5xl w-full max-h-[90vh] flex items-center justify-center">
+            <!-- Close Button -->
+            <button onclick="closeModal()" class="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img id="modalImage" src="" alt="Preview" class="max-w-full max-h-[90vh] object-contain rounded-md shadow-2xl scale-95 transition-transform duration-300" onclick="event.stopPropagation()">
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+
+        function openModal(src) {
+            modalImg.src = src;
+            modal.classList.remove('hidden');
+            // Small delay to allow display:block to apply before animating opacity
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalImg.classList.remove('scale-95');
+                modalImg.classList.add('scale-100');
+            }, 10);
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            modalImg.classList.remove('scale-100');
+            modalImg.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modalImg.src = '';
+            }, 300); // Match transition duration
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Close on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+
+        // Size Card Selection
+        function selectSizeCard(element) {
+            const cards = document.querySelectorAll('.size-card');
+            
+            cards.forEach(card => {
+                // Reset styling
+                card.classList.remove('border-green800');
+                card.classList.add('border-transparent', 'hover:border-green800/30');
+                
+                // Hide badge
+                const badge = card.querySelector('.checkmark-badge');
+                if (badge) {
+                    badge.classList.add('hidden');
+                    badge.classList.remove('flex');
+                }
+            });
+            
+            // Set active styling
+            element.classList.remove('border-transparent', 'hover:border-green800/30');
+            element.classList.add('border-green800');
+            
+            // Show active badge
+            const badge = element.querySelector('.checkmark-badge');
+            if (badge) {
+                badge.classList.remove('hidden');
+                badge.classList.add('flex');
+            }
+        }
+
+        // Drag and Drop File Upload
+        const dropzone = document.getElementById('dropzone');
+        const fileInput = document.getElementById('artworkUpload');
+        const fileNameDisplay = document.getElementById('fileNameDisplay');
+        const uploadIcon = document.getElementById('uploadIcon');
+        const chooseFileBtn = document.getElementById('chooseFileBtn');
+        const orText = document.getElementById('orText');
+        const reviewText = document.getElementById('reviewText');
+
+        // Prevent default drag behaviors
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropzone.addEventListener(eventName, preventDefaults, false);
+            document.body.addEventListener(eventName, preventDefaults, false);
+        });
+
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        // Highlight drop area when item is dragged over it
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropzone.addEventListener(eventName, highlight, false);
+        });
+
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropzone.addEventListener(eventName, unhighlight, false);
+        });
+
+        function highlight(e) {
+            dropzone.classList.add('bg-green800/10', 'border-green800');
+            dropzone.classList.remove('border-green800/40', 'hover:bg-green800/5');
+            uploadIcon.classList.add('-translate-y-1', 'scale-110');
+        }
+
+        function unhighlight(e) {
+            dropzone.classList.remove('bg-green800/10', 'border-green800');
+            dropzone.classList.add('border-green800/40', 'hover:bg-green800/5');
+            uploadIcon.classList.remove('-translate-y-1', 'scale-110');
+        }
+
+        // Handle dropped files
+        dropzone.addEventListener('drop', handleDrop, false);
+
+        function handleDrop(e) {
+            const dt = e.dataTransfer;
+            const files = dt.files;
+            if (files.length > 0) {
+                fileInput.files = dt.files; // Sync with input element
+            }
+            handleFiles(files);
+        }
+
+        // Handle file selection via click
+        fileInput.addEventListener('change', function() {
+            handleFiles(this.files);
+        });
+
+        function handleFiles(files) {
+            if (files.length > 0) {
+                const file = files[0];
+                fileNameDisplay.textContent = file.name;
+                fileNameDisplay.classList.add('font-medium', 'text-green800');
+                
+                // Change icon to document check
+                uploadIcon.innerHTML = '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="m9 15 2 2 4-4"></path>';
+                
+                chooseFileBtn.textContent = 'Change File';
+                chooseFileBtn.classList.replace('bg-green800', 'bg-textPrimary');
+                
+                orText.classList.add('opacity-0');
+                setTimeout(() => orText.classList.add('hidden'), 300);
+                
+                reviewText.textContent = 'File ready for upload';
+                reviewText.classList.add('text-green800');
+                
+                document.getElementById('removeFileBtn').classList.remove('hidden');
+            }
+        }
+
+        function removeFile(event) {
+            event.stopPropagation();
+            fileInput.value = ''; // clear input
+            
+            // Reset UI
+            fileNameDisplay.textContent = 'Drag & drop your file here';
+            fileNameDisplay.classList.remove('font-medium', 'text-green800');
+            
+            // Revert icon to cloud upload
+            uploadIcon.innerHTML = '<path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path><path d="M12 12v9"></path><path d="m8 16 4-4 4 4"></path>';
+            
+            chooseFileBtn.textContent = 'Choose File';
+            chooseFileBtn.classList.replace('bg-textPrimary', 'bg-green800');
+            
+            orText.classList.remove('hidden');
+            setTimeout(() => orText.classList.remove('opacity-0'), 10);
+            
+            reviewText.textContent = 'We review all files before printing to ensure best quality.';
+            reviewText.classList.remove('text-green800');
+            
+            document.getElementById('removeFileBtn').classList.add('hidden');
+        }
+
+        // Rush Production Toggle
+        const rushToggleBtn = document.getElementById('rushToggleBtn');
+        const rushToggleThumb = document.getElementById('rushToggleThumb');
+        let isRushEnabled = false;
+
+        rushToggleBtn.addEventListener('click', () => {
+            isRushEnabled = !isRushEnabled;
+            rushToggleBtn.setAttribute('aria-pressed', isRushEnabled);
+            
+            if (isRushEnabled) {
+                // Enabled state
+                rushToggleBtn.classList.remove('bg-[#D8CEAA]');
+                rushToggleBtn.classList.add('bg-green800');
+                rushToggleThumb.classList.remove('left-1', 'w-[14px]', 'h-[14px]', 'top-1', 'shadow-sm');
+                rushToggleThumb.classList.add('left-[24px]', 'w-[16px]', 'h-[16px]', 'top-[3px]', 'shadow-md');
+            } else {
+                // Disabled state
+                rushToggleBtn.classList.remove('bg-green800');
+                rushToggleBtn.classList.add('bg-[#D8CEAA]');
+                rushToggleThumb.classList.add('left-1', 'w-[14px]', 'h-[14px]', 'top-1', 'shadow-sm');
+                rushToggleThumb.classList.remove('left-[24px]', 'w-[16px]', 'h-[16px]', 'top-[3px]', 'shadow-md');
+            }
+        });
+    </script>
 </body>
+
 </html>

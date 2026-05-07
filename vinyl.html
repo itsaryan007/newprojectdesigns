@@ -77,9 +77,6 @@
 
     <!-- Background Decorative Elements -->
     <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        <!-- Left-side grid lines using line.svg -->
-        <img src="illustrations/line.svg" alt="" class="absolute top-[92px] left-0 w-[350px] md:w-[500px] opacity-40 transform -translate-x-[15%]"
-            style="filter: brightness(0) saturate(100%) invert(87%) sepia(5%) saturate(200%) hue-rotate(20deg) brightness(95%) contrast(90%);">
 
     </div>
 
@@ -93,65 +90,68 @@
     <header class="relative z-20 w-full h-[92px] border-b border-green800/20">
         <div class="flex items-center justify-between px-6 lg:px-10 max-w-[1280px] mx-auto w-full h-full">
             <!-- Logo -->
-            <div class="flex flex-col items-center justify-center leading-none tracking-wider text-textPrimary w-[145px] text-center flex-shrink-0">
-            <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg" class="w-[145px]">
-                <text x="80" y="22" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="20"
-                    font-weight="600" fill="#1F1D1A" letter-spacing="4">NEW</text>
-                <text x="80" y="48" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="24"
-                    font-weight="600" fill="#1F1D1A" letter-spacing="3">PROJECT</text>
-                <text x="80" y="66" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8"
-                    font-weight="500" fill="#6D716A" letter-spacing="5">DESIGNS</text>
-            </svg>
-        </div>
+            <div
+                class="flex flex-col items-center justify-center leading-none tracking-wider text-textPrimary w-[145px] text-center flex-shrink-0">
+                <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg" class="w-[145px]">
+                    <text x="80" y="22" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="20"
+                        font-weight="600" fill="#1F1D1A" letter-spacing="4">NEW</text>
+                    <text x="80" y="48" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="24"
+                        font-weight="600" fill="#1F1D1A" letter-spacing="3">PROJECT</text>
+                    <text x="80" y="66" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8"
+                        font-weight="500" fill="#6D716A" letter-spacing="5">DESIGNS</text>
+                </svg>
+            </div>
 
-        <!-- Navigation -->
-        <nav class="hidden lg:flex items-center gap-7 font-sans text-[14px] font-medium text-textPrimary">
-            <a href="index.html" class="hover:text-green800 transition-colors pb-[6px]">Home</a>
-            <a href="signage.html" class="hover:text-green800 transition-colors pb-[6px]">Signage & Event Details</a>
-            <a href="vinyl.html"
-                class="text-textPrimary border-b border-green800 pb-[6px] hover:text-green800 transition-colors">Vinyl Printing</a>
-        </nav>
+            <!-- Navigation -->
+            <nav class="hidden lg:flex items-center gap-7 font-sans text-[14px] font-medium text-textPrimary">
+                <a href="index.html" class="hover:text-green800 transition-colors pb-[6px]">Home</a>
+                <a href="signage.html" class="hover:text-green800 transition-colors pb-[6px]">Signage & Event
+                    Details</a>
+                <a href="vinyl.html"
+                    class="text-textPrimary border-b border-green800 pb-[6px] hover:text-green800 transition-colors">Vinyl
+                    Printing</a>
+            </nav>
 
-        <!-- Right Actions -->
-        <div class="flex items-center gap-3 flex-shrink-0">
-            <button aria-label="Email"
-                class="w-[38px] h-[38px] rounded-full bg-green800 text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity">
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <rect width="20" height="16" x="2" y="4" rx="2" />
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                </svg>
-            </button>
-            <button aria-label="Instagram"
-                class="w-[38px] h-[38px] rounded-full bg-green800 text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity">
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                </svg>
-            </button>
-            <button aria-label="Cart"
-                class="w-[38px] h-[38px] rounded-full bg-green800 text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity relative">
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="8" cy="21" r="1" />
-                    <circle cx="19" cy="21" r="1" />
-                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-                </svg>
-                <span
-                    class="absolute -top-1 -right-1 bg-yellow500 text-green800 text-[10px] font-bold w-[18px] h-[18px] flex items-center justify-center rounded-full">0</span>
-            </button>
-            <a href="#"
-                class="hidden sm:flex items-center gap-2 bg-green800 text-textInverse font-sans text-[14px] font-semibold px-[22px] h-[40px] rounded-pill hover:bg-green900 transition-colors ml-1 tracking-[0.02em]">
-                Custom Inquiry
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                </svg>
-            </a>
-        </div>
+            <!-- Right Actions -->
+            <div class="flex items-center gap-3 flex-shrink-0">
+                <button aria-label="Email"
+                    class="w-[38px] h-[38px] rounded-full bg-green800 text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                </button>
+                <button aria-label="Instagram"
+                    class="w-[38px] h-[38px] rounded-full bg-green800 text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                </button>
+                <button aria-label="Cart"
+                    class="w-[38px] h-[38px] rounded-full bg-green800 text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="8" cy="21" r="1" />
+                        <circle cx="19" cy="21" r="1" />
+                        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                    </svg>
+                    <span
+                        class="absolute -top-1 -right-1 bg-yellow500 text-green800 text-[10px] font-bold w-[18px] h-[18px] flex items-center justify-center rounded-full">0</span>
+                </button>
+                <a href="#"
+                    class="hidden sm:flex items-center gap-2 bg-green800 text-textInverse font-sans text-[14px] font-semibold px-[22px] h-[40px] rounded-pill hover:bg-green900 transition-colors ml-1 tracking-[0.02em]">
+                    Custom Inquiry
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -385,22 +385,27 @@
                     <div id="dropzone" onclick="document.getElementById('artworkUpload').click()"
                         class="md:col-span-2 border border-dashed border-green800/40 rounded-xl flex flex-col items-center justify-center py-12 px-6 text-center hover:bg-green800/5 transition-colors cursor-pointer relative">
                         <input type="file" id="artworkUpload" class="hidden" accept=".pdf,.ai,.eps,.png,.jpg,.jpeg">
-                        <svg id="uploadIcon" class="w-10 h-10 text-[#3F6848] mb-3 opacity-80 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
-                            stroke-linecap="round" stroke-linejoin="round">
+                        <svg id="uploadIcon"
+                            class="w-10 h-10 text-[#3F6848] mb-3 opacity-80 transition-transform duration-300"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
                             <path d="M12 12v9"></path>
                             <path d="m8 16 4-4 4 4"></path>
                         </svg>
-                        <p id="fileNameDisplay" class="font-sans text-textPrimary text-[15px] mb-1">Drag & drop your file here</p>
-                        <p id="orText" class="font-sans text-textMuted text-xs mb-3 transition-opacity duration-300">or</p>
+                        <p id="fileNameDisplay" class="font-sans text-textPrimary text-[15px] mb-1">Drag & drop your
+                            file here</p>
+                        <p id="orText" class="font-sans text-textMuted text-xs mb-3 transition-opacity duration-300">or
+                        </p>
                         <div class="flex items-center justify-center gap-3 mb-4 z-10 relative">
                             <button id="chooseFileBtn" type="button"
-                                class="bg-green800 text-white px-5 py-2 rounded-full font-sans text-[13px] font-medium hover:bg-opacity-90 transition-opacity pointer-events-none">Choose File</button>
+                                class="bg-green800 text-white px-5 py-2 rounded-full font-sans text-[13px] font-medium hover:bg-opacity-90 transition-opacity pointer-events-none">Choose
+                                File</button>
                             <button id="removeFileBtn" type="button" onclick="removeFile(event)"
                                 class="hidden text-textMuted hover:text-red-600 transition-colors bg-black/5 hover:bg-red-50 px-4 py-2 rounded-full text-[13px] font-medium font-sans border border-transparent hover:border-red-600/30">Remove</button>
                         </div>
-                        <p id="reviewText" class="font-sans text-textMuted text-[11px]">We review all files before printing to ensure
+                        <p id="reviewText" class="font-sans text-textMuted text-[11px]">We review all files before
+                            printing to ensure
                             best quality.</p>
                     </div>
 
@@ -447,7 +452,8 @@
                         </ul>
                         <div class="mt-auto pt-5 border-t border-borderLight">
                             <p class="font-sans text-[12px] text-textPrimary leading-relaxed">
-                                <span class="text-green800 font-medium text-[13px] block mb-1">Need a custom size?</span>
+                                <span class="text-green800 font-medium text-[13px] block mb-1">Need a custom
+                                    size?</span>
                                 <a href="#"
                                     class="border-b border-textPrimary hover:text-green800 transition-colors pb-0.5">Email</a>
                                 or message us and we'll create a custom order just for you.
@@ -467,8 +473,11 @@
                     </div>
                 </div>
                 <!-- Toggle Switch -->
-                <button id="rushToggleBtn" type="button" aria-pressed="false" class="w-[42px] h-[22px] rounded-full bg-[#D8CEAA] relative cursor-pointer shadow-inner transition-colors duration-300">
-                    <div id="rushToggleThumb" class="absolute left-1 top-1 w-[14px] h-[14px] bg-white rounded-full shadow-sm transition-all duration-300"></div>
+                <button id="rushToggleBtn" type="button" aria-pressed="false"
+                    class="w-[42px] h-[22px] rounded-full bg-[#D8CEAA] relative cursor-pointer shadow-inner transition-colors duration-300">
+                    <div id="rushToggleThumb"
+                        class="absolute left-1 top-1 w-[14px] h-[14px] bg-white rounded-full shadow-sm transition-all duration-300">
+                    </div>
                 </button>
             </div>
 
@@ -497,7 +506,8 @@
                     </svg>
                 </div>
 
-                <div class="w-full md:w-[170px] md:pl-5 mb-5 md:mb-0 text-center md:text-left flex-shrink-0 md:border-r border-borderLight pr-4">
+                <div
+                    class="w-full md:w-[170px] md:pl-5 mb-5 md:mb-0 text-center md:text-left flex-shrink-0 md:border-r border-borderLight pr-4">
                     <h3 class="font-serif text-[17px] text-textPrimary">Before You Order</h3>
                 </div>
 
@@ -535,23 +545,28 @@
             <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
                 <!-- Gallery Images -->
                 <div class="aspect-[4/5] rounded-xl overflow-hidden bg-white/20">
-                    <img src="images/vinylimage/vinyl-print1.jpeg" class="w-full h-full object-cover cursor-pointer transition-opacity hover:opacity-90"
+                    <img src="images/vinylimage/vinyl-print1.jpeg"
+                        class="w-full h-full object-cover cursor-pointer transition-opacity hover:opacity-90"
                         alt="Vinyl wall text installation" onclick="openModal(this.src)">
                 </div>
                 <div class="aspect-[4/5] rounded-xl overflow-hidden bg-white/20">
-                    <img src="images/vinylimage/vinylprint2.jpeg" class="w-full h-full object-cover cursor-pointer transition-opacity hover:opacity-90"
+                    <img src="images/vinylimage/vinylprint2.jpeg"
+                        class="w-full h-full object-cover cursor-pointer transition-opacity hover:opacity-90"
                         alt="Custom vinyl signage" onclick="openModal(this.src)">
                 </div>
                 <div class="aspect-[4/5] rounded-xl overflow-hidden bg-white/20">
-                    <img src="images/vinylimage/vinylprint3.jpeg" class="w-full h-full object-cover cursor-pointer transition-opacity hover:opacity-90"
+                    <img src="images/vinylimage/vinylprint3.jpeg"
+                        class="w-full h-full object-cover cursor-pointer transition-opacity hover:opacity-90"
                         alt="Event vinyl lettering" onclick="openModal(this.src)">
                 </div>
                 <div class="aspect-[4/5] rounded-xl overflow-hidden bg-white/20">
-                    <img src="images/vinylimage/vinylprint4.jpeg" class="w-full h-full object-cover cursor-pointer transition-opacity hover:opacity-90"
+                    <img src="images/vinylimage/vinylprint4.jpeg"
+                        class="w-full h-full object-cover cursor-pointer transition-opacity hover:opacity-90"
                         alt="Vinyl print project" onclick="openModal(this.src)">
                 </div>
                 <div class="aspect-[4/5] rounded-xl overflow-hidden bg-white/20">
-                    <img src="images/vinylimage/vinylprint5.jpeg" class="w-full h-full object-cover cursor-pointer transition-opacity hover:opacity-90"
+                    <img src="images/vinylimage/vinylprint5.jpeg"
+                        class="w-full h-full object-cover cursor-pointer transition-opacity hover:opacity-90"
                         alt="Custom vinyl event display" onclick="openModal(this.src)">
                 </div>
             </div>
@@ -591,15 +606,21 @@
     </footer>
 
     <!-- Image Modal -->
-    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/80 flex items-center justify-center p-4 backdrop-blur-sm transition-opacity opacity-0 duration-300" onclick="closeModal()">
+    <div id="imageModal"
+        class="fixed inset-0 z-50 hidden bg-black/80 flex items-center justify-center p-4 backdrop-blur-sm transition-opacity opacity-0 duration-300"
+        onclick="closeModal()">
         <div class="relative max-w-5xl w-full max-h-[90vh] flex items-center justify-center">
             <!-- Close Button -->
-            <button onclick="closeModal()" class="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button onclick="closeModal()"
+                class="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
-            <img id="modalImage" src="" alt="Preview" class="max-w-full max-h-[90vh] object-contain rounded-md shadow-2xl scale-95 transition-transform duration-300" onclick="event.stopPropagation()">
+            <img id="modalImage" src="" alt="Preview"
+                class="max-w-full max-h-[90vh] object-contain rounded-md shadow-2xl scale-95 transition-transform duration-300"
+                onclick="event.stopPropagation()">
         </div>
     </div>
 
@@ -640,12 +661,12 @@
         // Size Card Selection
         function selectSizeCard(element) {
             const cards = document.querySelectorAll('.size-card');
-            
+
             cards.forEach(card => {
                 // Reset styling
                 card.classList.remove('border-green800');
                 card.classList.add('border-transparent', 'hover:border-green800/30');
-                
+
                 // Hide badge
                 const badge = card.querySelector('.checkmark-badge');
                 if (badge) {
@@ -653,11 +674,11 @@
                     badge.classList.remove('flex');
                 }
             });
-            
+
             // Set active styling
             element.classList.remove('border-transparent', 'hover:border-green800/30');
             element.classList.add('border-green800');
-            
+
             // Show active badge
             const badge = element.querySelector('.checkmark-badge');
             if (badge) {
@@ -720,7 +741,7 @@
         }
 
         // Handle file selection via click
-        fileInput.addEventListener('change', function() {
+        fileInput.addEventListener('change', function () {
             handleFiles(this.files);
         });
 
@@ -729,19 +750,19 @@
                 const file = files[0];
                 fileNameDisplay.textContent = file.name;
                 fileNameDisplay.classList.add('font-medium', 'text-green800');
-                
+
                 // Change icon to document check
                 uploadIcon.innerHTML = '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="m9 15 2 2 4-4"></path>';
-                
+
                 chooseFileBtn.textContent = 'Change File';
                 chooseFileBtn.classList.replace('bg-green800', 'bg-textPrimary');
-                
+
                 orText.classList.add('opacity-0');
                 setTimeout(() => orText.classList.add('hidden'), 300);
-                
+
                 reviewText.textContent = 'File ready for upload';
                 reviewText.classList.add('text-green800');
-                
+
                 document.getElementById('removeFileBtn').classList.remove('hidden');
             }
         }
@@ -749,23 +770,23 @@
         function removeFile(event) {
             event.stopPropagation();
             fileInput.value = ''; // clear input
-            
+
             // Reset UI
             fileNameDisplay.textContent = 'Drag & drop your file here';
             fileNameDisplay.classList.remove('font-medium', 'text-green800');
-            
+
             // Revert icon to cloud upload
             uploadIcon.innerHTML = '<path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path><path d="M12 12v9"></path><path d="m8 16 4-4 4 4"></path>';
-            
+
             chooseFileBtn.textContent = 'Choose File';
             chooseFileBtn.classList.replace('bg-textPrimary', 'bg-green800');
-            
+
             orText.classList.remove('hidden');
             setTimeout(() => orText.classList.remove('opacity-0'), 10);
-            
+
             reviewText.textContent = 'We review all files before printing to ensure best quality.';
             reviewText.classList.remove('text-green800');
-            
+
             document.getElementById('removeFileBtn').classList.add('hidden');
         }
 
@@ -777,7 +798,7 @@
         rushToggleBtn.addEventListener('click', () => {
             isRushEnabled = !isRushEnabled;
             rushToggleBtn.setAttribute('aria-pressed', isRushEnabled);
-            
+
             if (isRushEnabled) {
                 // Enabled state
                 rushToggleBtn.classList.remove('bg-[#D8CEAA]');

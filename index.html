@@ -94,12 +94,10 @@
     <!-- BACKGROUND DECORATIVE LINES & CURVES     -->
     <!-- ======================================== -->
     <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        <!-- Left-side grid lines using line.svg -->
-        <img src="illustrations/line.svg" alt="" class="absolute top-[92px] left-0 w-[350px] md:w-[500px] opacity-[0.35] transform -translate-x-[15%]"
-            style="filter: brightness(0) saturate(100%) invert(55%) sepia(10%) saturate(500%) hue-rotate(80deg) brightness(95%) contrast(90%);">
 
         <!-- Right-side large quarter arc using circle.svg -->
-        <img src="illustrations/circle.svg" alt="" class="absolute top-[92px] right-0 w-[18vw] max-w-[220px] opacity-[0.35] transform translate-x-[15%]">
+        <img src="illustrations/circle.svg" alt=""
+            class="absolute top-[92px] right-0 w-[18vw] max-w-[220px] opacity-[0.35] transform translate-x-[15%]">
     </div>
 
     <!-- ======================================== -->
@@ -108,69 +106,71 @@
     <header class="relative z-20 w-full h-[92px] border-b border-green800/20">
         <div class="flex items-center justify-between px-6 lg:px-10 max-w-[1280px] mx-auto w-full h-full">
             <!-- Logo -->
-            <div class="flex flex-col items-center justify-center leading-none tracking-wider text-textPrimary w-[145px] text-center flex-shrink-0">
-            <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg" class="w-[145px]">
-                <text x="80" y="22" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="20"
-                    font-weight="600" fill="#1F1D1A" letter-spacing="4">NEW</text>
-                <text x="80" y="48" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="24"
-                    font-weight="600" fill="#1F1D1A" letter-spacing="3">PROJECT</text>
-                <text x="80" y="66" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8"
-                    font-weight="500" fill="#6D716A" letter-spacing="5">DESIGNS</text>
-            </svg>
-        </div>
+            <div
+                class="flex flex-col items-center justify-center leading-none tracking-wider text-textPrimary w-[145px] text-center flex-shrink-0">
+                <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg" class="w-[145px]">
+                    <text x="80" y="22" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="20"
+                        font-weight="600" fill="#1F1D1A" letter-spacing="4">NEW</text>
+                    <text x="80" y="48" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="24"
+                        font-weight="600" fill="#1F1D1A" letter-spacing="3">PROJECT</text>
+                    <text x="80" y="66" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8"
+                        font-weight="500" fill="#6D716A" letter-spacing="5">DESIGNS</text>
+                </svg>
+            </div>
 
-        <!-- Navigation -->
-        <nav class="hidden lg:flex items-center gap-7 font-sans text-[14px] font-medium text-textPrimary">
-            <a href="index.html"
-                class="text-textPrimary border-b border-green800 pb-[6px] hover:text-green800 transition-colors">Home</a>
-            <a href="signage.html" class="hover:text-green800 transition-colors pb-[6px]">Signage & Event Details</a>
-            <a href="vinyl.html" class="hover:text-green800 transition-colors pb-[6px]">Vinyl Printing</a>
-        </nav>
+            <!-- Navigation -->
+            <nav class="hidden lg:flex items-center gap-7 font-sans text-[14px] font-medium text-textPrimary">
+                <a href="index.html"
+                    class="text-textPrimary border-b border-green800 pb-[6px] hover:text-green800 transition-colors">Home</a>
+                <a href="signage.html" class="hover:text-green800 transition-colors pb-[6px]">Signage & Event
+                    Details</a>
+                <a href="vinyl.html" class="hover:text-green800 transition-colors pb-[6px]">Vinyl Printing</a>
+            </nav>
 
-        <!-- Right Actions -->
-        <div class="flex items-center gap-3 flex-shrink-0">
-            <!-- Email Icon -->
-            <button aria-label="Email"
-                class="w-[38px] h-[38px] rounded-full bg-green800 text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity">
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <rect width="20" height="16" x="2" y="4" rx="2" />
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                </svg>
-            </button>
-            <!-- Instagram Icon -->
-            <button aria-label="Instagram"
-                class="w-[38px] h-[38px] rounded-full bg-green800 text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity">
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                </svg>
-            </button>
-            <!-- Cart Icon with Badge -->
-            <button aria-label="Cart"
-                class="w-[38px] h-[38px] rounded-full bg-green800 text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity relative">
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="8" cy="21" r="1" />
-                    <circle cx="19" cy="21" r="1" />
-                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-                </svg>
-                <span
-                    class="absolute -top-1 -right-1 bg-yellow500 text-green800 text-[10px] font-bold w-[18px] h-[18px] flex items-center justify-center rounded-full">0</span>
-            </button>
-            <!-- Custom Inquiry Button -->
-            <a href="#"
-                class="hidden sm:flex items-center gap-2 bg-green800 text-textInverse font-sans text-[14px] font-semibold px-[22px] h-[40px] rounded-pill hover:bg-green900 transition-colors ml-1 tracking-[0.02em]">
-                Custom Inquiry
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                </svg>
-            </a>
-        </div>
+            <!-- Right Actions -->
+            <div class="flex items-center gap-3 flex-shrink-0">
+                <!-- Email Icon -->
+                <button aria-label="Email"
+                    class="w-[38px] h-[38px] rounded-full bg-green800 text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                </button>
+                <!-- Instagram Icon -->
+                <button aria-label="Instagram"
+                    class="w-[38px] h-[38px] rounded-full bg-green800 text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                </button>
+                <!-- Cart Icon with Badge -->
+                <button aria-label="Cart"
+                    class="w-[38px] h-[38px] rounded-full bg-green800 text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="8" cy="21" r="1" />
+                        <circle cx="19" cy="21" r="1" />
+                        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                    </svg>
+                    <span
+                        class="absolute -top-1 -right-1 bg-yellow500 text-green800 text-[10px] font-bold w-[18px] h-[18px] flex items-center justify-center rounded-full">0</span>
+                </button>
+                <!-- Custom Inquiry Button -->
+                <a href="#"
+                    class="hidden sm:flex items-center gap-2 bg-green800 text-textInverse font-sans text-[14px] font-semibold px-[22px] h-[40px] rounded-pill hover:bg-green900 transition-colors ml-1 tracking-[0.02em]">
+                    Custom Inquiry
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </header>
 

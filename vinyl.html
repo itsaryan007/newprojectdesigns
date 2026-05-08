@@ -338,9 +338,9 @@
 
                     <!-- Size 5 -->
                     <div onclick="selectSizeCard(this)"
-                        class="size-card bg-yellow200 rounded-2xl overflow-hidden flex flex-col border-[3px] border-transparent relative cursor-pointer shadow-sm group hover:border-green800/30 transition-colors h-[380px]">
+                        class="size-card bg-yellow200 rounded-2xl overflow-hidden flex flex-col border-[3px] border-green800 relative cursor-pointer shadow-sm group transition-colors h-[380px]">
                         <div
-                            class="checkmark-badge hidden absolute top-3 right-3 bg-green800 text-white rounded-full w-[26px] h-[26px] items-center justify-center z-10 shadow-sm">
+                            class="checkmark-badge flex absolute top-3 right-3 bg-green800 text-white rounded-full w-[26px] h-[26px] items-center justify-center z-10 shadow-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -505,17 +505,24 @@
                 </button>
             </div>
 
-            <!-- Add to Cart Button -->
-            <button
-                class="w-full bg-green800 text-textInverse rounded-xl py-3.5 flex items-center justify-center gap-2 hover:bg-opacity-90 transition-opacity font-sans font-medium text-[15px] shadow-sm">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="8" cy="21" r="1" />
-                    <circle cx="19" cy="21" r="1" />
-                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-                </svg>
-                Add to Cart
-            </button>
+            <!-- Subtotal & Add to Cart -->
+            <div class="bg-white border border-borderLight rounded-xl p-8 flex flex-col items-center relative overflow-hidden shadow-sm">
+                <!-- Decorative shape -->
+                <div class="absolute -top-16 -right-16 w-32 h-32 bg-black/5 rounded-full pointer-events-none"></div>
+                
+                <p class="font-sans text-[15px] text-textSecondary mb-5 relative z-10">4' x 6': $288.00</p>
+                
+                <button
+                    class="w-full sm:w-[320px] bg-green800 text-textInverse rounded-xl py-3.5 flex items-center justify-center gap-2 hover:bg-opacity-90 transition-opacity font-sans font-medium text-[15px] shadow-sm relative z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="8" cy="21" r="1" />
+                        <circle cx="19" cy="21" r="1" />
+                        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                    </svg>
+                    Add to Cart
+                </button>
+            </div>
 
             <!-- Before You Order -->
             <div
@@ -724,6 +731,22 @@
             }
         });
 
+        // Application State
+        let isRushEnabled = false;
+        let currentSize = "4' x 6'";
+        let currentBasePrice = 288;
+
+        function updateSubtotalDisplay() {
+            const subtotalEl = document.getElementById('subtotalDisplay');
+            if (subtotalEl) {
+                let finalPrice = currentBasePrice;
+                if (isRushEnabled) {
+                    finalPrice = finalPrice * 1.3;
+                }
+                subtotalEl.textContent = `${currentSize}: $${finalPrice.toFixed(2)}`;
+            }
+        }
+
         // Size Card Selection
         function selectSizeCard(element) {
             const cards = document.querySelectorAll('.size-card');
@@ -750,6 +773,16 @@
             if (badge) {
                 badge.classList.remove('hidden');
                 badge.classList.add('flex');
+            }
+
+            // Update State
+            const sizeText = element.querySelector('h3').textContent.trim();
+            const priceTextRaw = element.querySelector('p').textContent.trim();
+            const priceMatch = priceTextRaw.match(/\$(\d+)/);
+            if (priceMatch) {
+                currentSize = sizeText;
+                currentBasePrice = parseInt(priceMatch[1], 10);
+                updateSubtotalDisplay();
             }
         }
 
@@ -859,7 +892,6 @@
         // Rush Production Toggle
         const rushToggleBtn = document.getElementById('rushToggleBtn');
         const rushToggleThumb = document.getElementById('rushToggleThumb');
-        let isRushEnabled = false;
 
         rushToggleBtn.addEventListener('click', () => {
             isRushEnabled = !isRushEnabled;
@@ -878,6 +910,8 @@
                 rushToggleThumb.classList.add('left-1', 'w-[14px]', 'h-[14px]', 'top-1', 'shadow-sm');
                 rushToggleThumb.classList.remove('left-[24px]', 'w-[16px]', 'h-[16px]', 'top-[3px]', 'shadow-md');
             }
+            
+            updateSubtotalDisplay();
         });
 
         function toggleMobileMenu() {

@@ -72,13 +72,26 @@
             background-color: #3F6848;
             color: #FBF8F0;
         }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F7F3EA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #3F6848;
+            border-radius: 3px;
+        }
     </style>
 </head>
 
 <body class="antialiased min-h-screen flex flex-col relative">
 
     <!-- Header Section -->
-    <header class="relative z-20 w-full h-[92px] border-b border-green800/20">
+    <header class="sticky top-0 z-40 bg-cream w-full h-[92px] border-b border-green800/20">
         <div class="flex items-center justify-between px-6 lg:px-10 max-w-[1280px] mx-auto w-full h-full">
             <!-- Logo -->
             <div
@@ -154,7 +167,7 @@
     <main class="flex-grow relative z-10">
 
         <!-- Hero Section -->
-        <section class="relative pt-[90px] pb-[72px] overflow-hidden">
+        <section class="relative pt-10 pb-[72px] overflow-hidden">
             <!-- Background Decorative Lines & Curves -->
             <div class="absolute inset-0 pointer-events-none overflow-hidden">
 
@@ -166,14 +179,14 @@
                     style="transform: scaleX(-1);">
             </div>
 
-            <div class="max-w-[780px] mx-auto px-6 text-center relative z-10 mt-4">
+            <div class="max-w-[1000px] mx-auto px-6 text-center relative z-10">
                 <span
                     class="font-sans font-bold text-[14px] tracking-[0.18em] text-green800 uppercase mb-5 block">Signage
                     & Print Shop</span>
                 <h1
-                    class="font-serif text-[48px] sm:text-[54px] md:text-[64px] leading-[1.1] sm:leading-[66px] font-semibold tracking-[-0.02em] text-textPrimary mb-7">
-                    Custom Signage,<br>
-                    Vinyl & Event Details
+                    class="font-display text-[56px] sm:text-[78px] md:text-[104px] font-normal text-green700 uppercase leading-[0.88] tracking-[0.01em] mb-7">
+                    <span class="block md:whitespace-nowrap">Custom Signage,</span>
+                    <span class="block md:whitespace-nowrap">Vinyl & Event Details</span>
                 </h1>
 
                 <div class="w-16 h-px bg-green800 mx-auto mb-7"></div>
@@ -213,7 +226,7 @@
                         </div>
 
                         <h3
-                            class="font-serif text-[38px] leading-[44px] font-medium tracking-[-0.01em] text-textPrimary mb-[18px] mt-8">
+                            class="font-display text-[42px] leading-[42px] text-green800 uppercase mb-[18px] mt-8 tracking-[0.01em]">
                             Acrylic & Vinyl Signage</h3>
                         <p class="font-sans text-textSecondary text-[16px] leading-[28px] mb-8 max-w-[300px]">
                             Custom acrylic signs, decals, and statement pieces for events and spaces.
@@ -255,7 +268,7 @@
                         </div>
 
                         <h3
-                            class="font-serif text-[38px] leading-[44px] font-medium tracking-[-0.01em] text-textPrimary mb-[18px] mt-8">
+                            class="font-display text-[42px] leading-[42px] text-green800 uppercase mb-[18px] mt-8 tracking-[0.01em]">
                             Vinyl Printing</h3>
                         <p class="font-sans text-textSecondary text-[16px] leading-[28px] mb-8 max-w-[300px]">
                             Upload your design or work with us to create custom prints for your event.
@@ -282,8 +295,10 @@
                 <span
                     class="font-sans font-bold text-[14px] tracking-[0.18em] text-green800 uppercase mb-[14px] block">How
                     It Works</span>
-                <h2 class="font-serif text-[42px] leading-[48px] font-medium text-textPrimary mb-12">Simple steps.
-                    Beautiful results.</h2>
+                <h2 class="font-display text-[56px] leading-[56px] font-normal tracking-[0.01em] text-textPrimary uppercase mb-12">
+                    <span class="block">Simple steps.</span>
+                    <span class="block">Beautiful results.</span>
+                </h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-12">
                     <!-- Step 1 -->
@@ -298,7 +313,7 @@
                                 class="absolute -top-1 -left-1 w-[22px] h-[22px] bg-green800 text-textInverse rounded-full flex items-center justify-center font-sans font-bold text-[10px]">
                                 1</div>
                         </div>
-                        <h4 class="font-serif text-[22px] leading-[28px] font-medium text-textPrimary mb-2">Choose Your
+                        <h4 class="font-display text-[28px] leading-[28px] font-normal tracking-[0.01em] text-textPrimary uppercase mb-2">Choose Your
                             Product</h4>
                         <p class="font-sans text-textSecondary text-[14px] leading-[24px] max-w-[200px]">
                             Browse our categories and select the product that fits your vision.
@@ -317,7 +332,7 @@
                                 class="absolute -top-1 -left-1 w-[22px] h-[22px] bg-green800 text-textInverse rounded-full flex items-center justify-center font-sans font-bold text-[10px]">
                                 2</div>
                         </div>
-                        <h4 class="font-serif text-[22px] leading-[28px] font-medium text-textPrimary mb-2">Customize or
+                        <h4 class="font-display text-[28px] leading-[28px] font-normal tracking-[0.01em] text-textPrimary uppercase mb-2">Customize or
                             Upload</h4>
                         <p class="font-sans text-textSecondary text-[14px] leading-[24px] max-w-[200px]">
                             Personalize the details or upload your artwork and add it to your cart.
@@ -337,7 +352,7 @@
                                 class="absolute -top-1 -left-1 w-[22px] h-[22px] bg-green800 text-textInverse rounded-full flex items-center justify-center font-sans font-bold text-[10px]">
                                 3</div>
                         </div>
-                        <h4 class="font-serif text-[22px] leading-[28px] font-medium text-textPrimary mb-2">We Print &
+                        <h4 class="font-display text-[28px] leading-[28px] font-normal tracking-[0.01em] text-textPrimary uppercase mb-2">We Print &
                             Prepare</h4>
                         <p class="font-sans text-textSecondary text-[14px] leading-[24px] max-w-[200px]">
                             We craft, print, and prepare your order with care for your special event.

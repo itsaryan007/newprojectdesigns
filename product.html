@@ -49,7 +49,7 @@
                         'md': '14px',
                         'lg': '18px',
                         'xl': '24px',
-                        '2xl': '40px',
+                        '2xl': '16px',
                         'pill': '999px',
                     },
                     boxShadow: {
@@ -197,7 +197,7 @@
                     <!-- Image Gallery -->
                     <div class="w-full mb-16">
                         <div
-                            class="relative w-full aspect-square md:aspect-[4/3] lg:aspect-square rounded-[24px] overflow-hidden bg-[#2a1b0c] mb-6 group shadow-sm">
+                            class="relative w-full aspect-square md:aspect-[4/3] lg:aspect-square rounded-2xl overflow-hidden bg-[#2a1b0c] mb-6 group shadow-sm">
                             <img src="images/lightbox_main.png" alt="Light Box" class="w-full h-full object-cover">
 
                             <!-- Arrows -->
@@ -258,100 +258,48 @@
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                             <!-- Card 1 -->
-                            <div
-                                class="bg-white border border-[#D5CDBF] rounded-[16px] p-4 flex flex-col relative group">
-                                <div
-                                    class="absolute top-6 right-6 z-10 w-8 h-8 bg-white rounded-full flex items-center justify-center text-textMuted hover:text-red-500 cursor-pointer shadow-sm transition-colors">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path
-                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                                    </svg>
-                                </div>
-                                <div class="w-full aspect-[4/3] rounded-[12px] bg-gray-100 overflow-hidden mb-4">
+                            <div class="bg-creamSoft border border-[#D5CDBF] rounded-2xl p-5 transition-all duration-500 hover:-translate-y-1 hover:shadow-hover flex flex-col relative group">
+                                <div class="w-full aspect-[4/3] rounded-xl bg-gray-100 overflow-hidden mb-5">
                                     <img src="images/event_backdrop_pink_1778346332009.png" alt="Glam Photo-Op Box"
                                         class="w-full h-full object-cover">
                                 </div>
-                                <h4 class="font-display text-[18px] text-textPrimary mb-1 uppercase tracking-wide">Glam
-                                    Photo-Op Box</h4>
-                                <div class="font-sans text-[14px] font-semibold text-textPrimary mb-4">
-                                    $1050 <span class="font-normal text-textSecondary">/ day</span>
-                                </div>
-                                <div class="flex items-center justify-between mt-auto pt-2">
-                                    <div
-                                        class="flex items-center gap-3 bg-white border border-[#D5CDBF] rounded-pill px-3 py-1.5">
-                                        <button class="text-textMuted hover:text-textPrimary"><svg width="14"
-                                                height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                stroke-width="2">
-                                                <path d="M5 12h14" />
-                                            </svg></button>
-                                        <span class="font-sans text-[14px] font-semibold w-4 text-center">0</span>
-                                        <button class="text-textMuted hover:text-textPrimary"><svg width="14"
-                                                height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                stroke-width="2">
+                                <div class="flex flex-col flex-grow">
+                                    <span class="font-sans text-[10px] font-bold tracking-[0.1em] text-textSecondary uppercase mb-2 block opacity-70">Photo-Op Box</span>
+                                    <h4 class="font-serif text-[18px] text-textPrimary mb-1 leading-tight">Glam Photo-Op Box</h4>
+                                    <p class="font-sans text-[11px] text-textMuted font-medium italic opacity-70 mb-6">Dimensions: 6" H x 36" W x 18" D</p>
+                                    <div class="mt-auto flex items-center justify-between">
+                                        <div class="font-sans text-[16px] font-bold text-green800">
+                                            $1050 <span class="text-[12px] font-normal text-textMuted">/ day</span>
+                                        </div>
+                                        <button class="w-10 h-10 rounded-full bg-yellow500 text-green800 flex items-center justify-center hover:bg-yellow400 transition-all shadow-sm">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                                 <path d="M12 5v14M5 12h14" />
-                                            </svg></button>
+                                            </svg>
+                                        </button>
                                     </div>
-                                    <button
-                                        class="w-[40px] h-[40px] rounded-full bg-[#F9EBD3] text-[#A67E2E] flex items-center justify-center hover:bg-[#ECCC73] hover:text-white transition-colors">
-                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <circle cx="8" cy="21" r="1" />
-                                            <circle cx="19" cy="21" r="1" />
-                                            <path
-                                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-                                        </svg>
-                                    </button>
                                 </div>
                             </div>
 
                             <!-- Card 2 -->
-                            <div
-                                class="bg-white border border-[#D5CDBF] rounded-[16px] p-4 flex flex-col relative group">
-                                <div
-                                    class="absolute top-6 right-6 z-10 w-8 h-8 bg-white rounded-full flex items-center justify-center text-textMuted hover:text-red-500 cursor-pointer shadow-sm transition-colors">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path
-                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                                    </svg>
-                                </div>
-                                <div class="w-full aspect-[4/3] rounded-[12px] bg-gray-100 overflow-hidden mb-4">
+                            <div class="bg-creamSoft border border-[#D5CDBF] rounded-2xl p-5 transition-all duration-500 hover:-translate-y-1 hover:shadow-hover flex flex-col relative group">
+                                <div class="w-full aspect-[4/3] rounded-xl bg-gray-100 overflow-hidden mb-5">
                                     <img src="images/event_backdrop_pink_1778346332009.png" alt="Kid-Sized Photo-Op Box"
                                         class="w-full h-full object-cover">
                                 </div>
-                                <h4 class="font-display text-[18px] text-textPrimary mb-1 uppercase tracking-wide">
-                                    Kid-Sized Photo-Op Box</h4>
-                                <div class="font-sans text-[14px] font-semibold text-textPrimary mb-4">
-                                    $775 <span class="font-normal text-textSecondary">/ day</span>
-                                </div>
-                                <div class="flex items-center justify-between mt-auto pt-2">
-                                    <div
-                                        class="flex items-center gap-3 bg-white border border-[#D5CDBF] rounded-pill px-3 py-1.5">
-                                        <button class="text-textMuted hover:text-textPrimary"><svg width="14"
-                                                height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                stroke-width="2">
-                                                <path d="M5 12h14" />
-                                            </svg></button>
-                                        <span class="font-sans text-[14px] font-semibold w-4 text-center">0</span>
-                                        <button class="text-textMuted hover:text-textPrimary"><svg width="14"
-                                                height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                stroke-width="2">
+                                <div class="flex flex-col flex-grow">
+                                    <span class="font-sans text-[10px] font-bold tracking-[0.1em] text-textSecondary uppercase mb-2 block opacity-70">Photo-Op Box</span>
+                                    <h4 class="font-serif text-[18px] text-textPrimary mb-1 leading-tight">Kid-Sized Photo-Op Box</h4>
+                                    <p class="font-sans text-[11px] text-textMuted font-medium italic opacity-70 mb-6">Dimensions: 6" H x 36" W x 18" D</p>
+                                    <div class="mt-auto flex items-center justify-between">
+                                        <div class="font-sans text-[16px] font-bold text-green800">
+                                            $775 <span class="text-[12px] font-normal text-textMuted">/ day</span>
+                                        </div>
+                                        <button class="w-10 h-10 rounded-full bg-yellow500 text-green800 flex items-center justify-center hover:bg-yellow400 transition-all shadow-sm">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                                 <path d="M12 5v14M5 12h14" />
-                                            </svg></button>
+                                            </svg>
+                                        </button>
                                     </div>
-                                    <button
-                                        class="w-[40px] h-[40px] rounded-full bg-[#F9EBD3] text-[#A67E2E] flex items-center justify-center hover:bg-[#ECCC73] hover:text-white transition-colors">
-                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <circle cx="8" cy="21" r="1" />
-                                            <circle cx="19" cy="21" r="1" />
-                                            <path
-                                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-                                        </svg>
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -403,7 +351,7 @@
                     </div>
 
                     <!-- Options Box -->
-                    <div class="bg-white border border-[#D5CDBF] rounded-[16px] p-8 shadow-soft">
+                    <div class="bg-creamSoft border border-[#D5CDBF] rounded-2xl p-8">
                         <!-- Header -->
                         <div class="mb-8">
                             <div>
@@ -564,7 +512,7 @@
                                 </div>
                             </div>
 
-                            <div class="flex items-center gap-2 mt-6 text-textMuted font-sans text-[13px]">
+                            <div class="flex items-center gap-2 mt-6 text-textMuted font-sans text-[13px] ml-0 sm:ml-14">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                     <path
@@ -631,7 +579,7 @@
                     </div>
 
                     <!-- Add-ons Box -->
-                    <div class="bg-transparent border border-[#D5CDBF] rounded-[16px] p-3 flex flex-col gap-2">
+                    <div class="bg-creamSoft border border-[#D5CDBF] rounded-2xl p-3 flex flex-col gap-2">
                         <div class="px-3 pt-3 pb-2">
                             <h4 class="font-sans text-[13px] font-bold tracking-[0.1em] text-textPrimary uppercase">
                                 OPTIONAL ADD-ONS (CLICK TO ADD)</h4>
@@ -723,7 +671,7 @@
                     </div>
 
                     <!-- Event Dates Box -->
-                    <div class="bg-white border border-[#D5CDBF] rounded-[16px] p-6">
+                    <div class="bg-creamSoft border border-[#D5CDBF] rounded-2xl p-6">
                         <h4 class="font-sans text-[13px] font-bold tracking-[0.1em] text-textPrimary mb-5 uppercase">
                             EVENT DATES</h4>
                         <div class="grid grid-cols-2 gap-5 mb-4">
@@ -790,7 +738,7 @@
 
                     <!-- Accordions -->
                     <div
-                        class="border border-[#D5CDBF] rounded-[16px] bg-white overflow-hidden divide-y divide-[#D5CDBF]">
+                        class="border border-[#D5CDBF] rounded-2xl bg-creamSoft overflow-hidden divide-y divide-[#D5CDBF]">
                         <!-- Accordion 1 -->
                         <div class="p-6 flex items-start gap-5">
                             <div class="mt-0.5 text-textMuted">

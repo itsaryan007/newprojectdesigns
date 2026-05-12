@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signage & Print Shop | New Project Designs</title>
-    <meta name="description"
-        content="Custom signage, vinyl & event details designed to elevate your event with modern, custom-made pieces.">
+    <title>Visual Showcase - New Project Designs</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -65,7 +60,7 @@
     </script>
     <style>
         body {
-            background-color: #F7F3EA;
+            background-color: #FBF8F0;
             color: #1F1D1A;
             overflow-x: hidden;
         }
@@ -80,19 +75,27 @@
         }
 
         ::-webkit-scrollbar-track {
-            background: #F7F3EA;
+            background: #FBF8F0;
         }
 
         ::-webkit-scrollbar-thumb {
             background: #3F6848;
             border-radius: 3px;
         }
+
+        /* Filter Tabs */
+        .filter-tabs::-webkit-scrollbar {
+            display: none;
+        }
+        .filter-tabs {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     </style>
 </head>
-
 <body class="antialiased min-h-screen flex flex-col relative">
 
-    <!-- Header Section -->
+    <!-- Header -->
     <header class="sticky top-0 z-40 bg-cream w-full h-[92px] border-b border-green800/20">
         <div class="flex items-center justify-between px-6 lg:px-10 max-w-[1280px] mx-auto w-full h-full">
             <!-- Logo -->
@@ -111,7 +114,7 @@
             <!-- Navigation -->
             <nav class="hidden lg:flex items-center gap-7 font-sans text-[14px] font-medium text-textPrimary">
                 <a href="index.html" class="hover:text-green800 transition-colors pb-[6px]">Home</a>
-                <a href="signage.html" class="text-textPrimary border-b border-green800 pb-[6px] hover:text-green800 transition-colors">Signage & Event Details</a>
+                <a href="signage.html" class="hover:text-green800 transition-colors pb-[6px]">Signage & Event Details</a>
                 <a href="vinyl.html" class="hover:text-green800 transition-colors pb-[6px]">Vinyl Printing</a>
                 <a href="about.html" class="hover:text-green800 transition-colors pb-[6px]">About</a>
             </nav>
@@ -172,205 +175,198 @@
         </div>
     </header>
 
-    <main class="flex-grow relative z-10">
+    <!-- Decorative Background Elements -->
+    <div class="absolute inset-0 top-0 pointer-events-none overflow-hidden z-0 h-[600px]">
+        <!-- Top Left Flower -->
+        <img src="illustrations/flower.svg" alt="" class="absolute top-[10%] left-[0%] w-[350px] opacity-[0.25]" style="filter: hue-rotate(85deg) saturate(30%) brightness(80%); transform: translate(-20%, -10%);">
+        
+        <!-- Large arches -->
+        <div class="absolute top-[-50px] left-[5%] w-[40vw] h-[800px] rounded-full border border-[#D5CDBF]/50 pointer-events-none"></div>
+        <div class="absolute top-[50px] right-[5%] w-[40vw] h-[800px] rounded-full border border-[#D5CDBF]/50 pointer-events-none"></div>
+        
+        <!-- Large solid arch right -->
+        <div class="absolute top-[80px] right-[-10%] w-[500px] h-[800px] rounded-t-full bg-[#EFECE5]/80 mix-blend-multiply pointer-events-none"></div>
+    </div>
 
-        <!-- Hero Section -->
-        <section class="relative pt-10 pb-[72px] overflow-hidden">
-            <!-- Background Decorative Lines & Curves -->
-            <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <!-- Hero Section -->
+    <section class="relative z-10 pt-16 pb-12 text-center px-6">
+        <h4 class="font-sans font-bold text-[11px] tracking-[0.2em] text-[#B89632] uppercase mb-4 flex items-center justify-center gap-2">
+            SEE OUR WORK IN ACTION
+            <svg width="10" height="10" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M6 0L7.5 4.5L12 6L7.5 7.5L6 12L4.5 7.5L0 6L4.5 4.5L6 0Z"/></svg>
+        </h4>
+        
+        <h1 class="font-serif text-[56px] md:text-[72px] text-[#2F5138] leading-[1.1] mb-6">
+            Visual Showcase
+        </h1>
+        
+        <div class="max-w-[650px] mx-auto text-center space-y-1">
+            <p class="font-sans text-[15px] text-[#4F5A4D] leading-relaxed">
+                Immersive event builds that turn spaces into experiences.
+            </p>
+            <p class="font-sans text-[15px] text-[#4F5A4D] leading-relaxed">
+                From concept to installation, we create event environments that make an impact.
+            </p>
+        </div>
+        
+        <!-- Star decorations -->
+        <div class="absolute top-[80px] left-[20%] text-[#ECCC73]">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 0L14 9L23 11L14 13L12 22L10 13L1 11L10 9L12 0Z"/></svg>
+        </div>
+        <div class="absolute top-[60px] right-[25%] text-[#ECCC73]">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 0L14 9L23 11L14 13L12 22L10 13L1 11L10 9L12 0Z"/></svg>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="relative z-10 pb-10 px-6">
+        <div class="max-w-[1000px] mx-auto flex items-center justify-start md:justify-center overflow-x-auto filter-tabs">
+            <div class="flex items-center gap-2 p-1.5 bg-white border border-[#D5CDBF] rounded-pill whitespace-nowrap shadow-sm min-w-max mx-auto">
+                <button class="bg-[#3F6848] text-white font-sans text-[13px] font-semibold px-6 py-2.5 rounded-pill transition-colors">
+                    All Projects
+                </button>
+                <button class="text-[#4F5A4D] hover:text-[#1F1D1A] font-sans text-[13px] font-medium px-5 py-2.5 rounded-pill transition-colors">
+                    Backdrops & Walls
+                </button>
+                <button class="text-[#4F5A4D] hover:text-[#1F1D1A] font-sans text-[13px] font-medium px-5 py-2.5 rounded-pill transition-colors">
+                    Signage & Branding
+                </button>
+                <button class="text-[#4F5A4D] hover:text-[#1F1D1A] font-sans text-[13px] font-medium px-5 py-2.5 rounded-pill transition-colors">
+                    Props & Installations
+                </button>
+                <button class="text-[#4F5A4D] hover:text-[#1F1D1A] font-sans text-[13px] font-medium px-5 py-2.5 rounded-pill transition-colors">
+                    Photo Opportunities
+                </button>
+                <button class="text-[#4F5A4D] hover:text-[#1F1D1A] font-sans text-[13px] font-medium px-5 py-2.5 rounded-pill transition-colors">
+                    Events
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Masonry Gallery -->
+    <main class="flex-grow relative z-10 pb-24 px-6 md:px-10">
+        <div class="max-w-[1440px] mx-auto">
+            <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
+                
+                <!-- Item 1 (horizontalish) -->
+                <div class="break-inside-avoid rounded-[16px] overflow-hidden shadow-sm group cursor-pointer relative">
+                    <img src="images/event_backdrop_pink_1778346332009.png" alt="Event Backdrop" class="w-full object-cover h-[250px] transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <!-- Item 2 (vertical) -->
+                <div class="break-inside-avoid rounded-[16px] overflow-hidden shadow-sm group cursor-pointer relative">
+                    <img src="images/event_sign_acrylic_1778346303662.png" alt="Event Sign" class="w-full object-cover h-[450px] transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <!-- Item 3 (vertical) -->
+                <div class="break-inside-avoid rounded-[16px] overflow-hidden shadow-sm group cursor-pointer relative">
+                    <img src="images/event_prop_minecraft_1778346316584.png" alt="Event Prop" class="w-full object-cover h-[400px] transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <!-- Item 4 (square) -->
+                <div class="break-inside-avoid rounded-[16px] overflow-hidden shadow-sm group cursor-pointer relative">
+                    <img src="images/event_backdrop_ohbaby_1778346280978.png" alt="Event Oh Baby" class="w-full object-cover h-[350px] transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <!-- Item 5 (vertical tall) -->
+                <div class="break-inside-avoid rounded-[16px] overflow-hidden shadow-sm group cursor-pointer relative">
+                    <img src="images/event_backdrop_pink_1778346332009.png" alt="Event Pink" class="w-full object-cover h-[500px] transition-transform duration-500 group-hover:scale-105" style="object-position: center bottom;">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <!-- Item 6 (horizontal short) -->
+                <div class="break-inside-avoid rounded-[16px] overflow-hidden shadow-sm group cursor-pointer relative">
+                    <img src="images/event_sign_acrylic_1778346303662.png" alt="Signage" class="w-full object-cover h-[220px] transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <!-- Item 7 (tall vertical) -->
+                <div class="break-inside-avoid rounded-[16px] overflow-hidden shadow-sm group cursor-pointer relative">
+                    <img src="images/event_prop_minecraft_1778346316584.png" alt="Prop" class="w-full object-cover h-[480px] transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <!-- Item 8 (square large) -->
+                <div class="break-inside-avoid rounded-[16px] overflow-hidden shadow-sm group cursor-pointer relative">
+                    <img src="images/event_backdrop_ohbaby_1778346280978.png" alt="Backdrop" class="w-full object-cover h-[400px] transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <!-- Item 9 (horizontal) -->
+                <div class="break-inside-avoid rounded-[16px] overflow-hidden shadow-sm group cursor-pointer relative">
+                    <img src="images/event_backdrop_pink_1778346332009.png" alt="Pink Backdrop" class="w-full object-cover h-[260px] transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <!-- Item 10 (vertical tall) -->
+                <div class="break-inside-avoid rounded-[16px] overflow-hidden shadow-sm group cursor-pointer relative">
+                    <img src="images/event_sign_acrylic_1778346303662.png" alt="Signage" class="w-full object-cover h-[420px] transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <!-- Item 11 (squareish) -->
+                <div class="break-inside-avoid rounded-[16px] overflow-hidden shadow-sm group cursor-pointer relative">
+                    <img src="images/event_prop_minecraft_1778346316584.png" alt="Prop" class="w-full object-cover h-[350px] transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <!-- Item 12 (vertical tall) -->
+                <div class="break-inside-avoid rounded-[16px] overflow-hidden shadow-sm group cursor-pointer relative">
+                    <img src="images/event_backdrop_ohbaby_1778346280978.png" alt="Backdrop" class="w-full object-cover h-[500px] transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
 
             </div>
+        </div>
+    </main>
 
-            <!-- Right decorative botanical using flower-stem-green.svg -->
-            <div class="absolute top-0 right-0 pointer-events-none" style="transform: translateX(10px);">
-                <img src="illustrations/flower-stem-green.svg" alt="" class="w-[220px] h-auto opacity-[0.35]"
-                    style="transform: scaleX(-1);">
+    <!-- Call To Action -->
+    <section class="relative z-10 max-w-[1280px] mx-auto px-6 mb-20 w-full">
+        <!-- Delicate Box -->
+        <div class="bg-transparent border-[1.5px] border-[#D5CDBF]/80 rounded-[20px] p-8 md:p-12 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+            
+            <!-- Small stars overlay -->
+            <div class="absolute top-6 left-12 text-[#ECCC73] opacity-60">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 0L14 9L23 11L14 13L12 22L10 13L1 11L10 9L12 0Z"/></svg>
             </div>
-
-            <div class="max-w-[1000px] mx-auto px-6 text-center relative z-10">
-                <span
-                    class="font-sans font-bold text-[14px] tracking-[0.18em] text-green800 uppercase mb-5 block">Signage
-                    & Print Shop</span>
-                <h1
-                    class="font-display text-[56px] sm:text-[78px] md:text-[104px] font-normal text-green700 uppercase leading-[0.88] tracking-[0.01em] mb-7">
-                    <span class="block md:whitespace-nowrap">Custom Signage,</span>
-                    <span class="block md:whitespace-nowrap">Vinyl & Event Details</span>
-                </h1>
-
-                <div class="w-16 h-px bg-green800 mx-auto mb-7"></div>
-
-                <p class="font-sans text-textSecondary text-[18px] leading-[30px] max-w-[540px] mx-auto">
-                    Designed to elevate your event with<br>modern, custom-made pieces.
-                </p>
+            <div class="absolute bottom-6 left-32 text-[#ECCC73] opacity-60">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 0L14 9L23 11L14 13L12 22L10 13L1 11L10 9L12 0Z"/></svg>
             </div>
-        </section>
-
-        <!-- Cards Section -->
-        <section class="max-w-[1120px] mx-auto px-6 pb-24">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-                <!-- Card 1: Acrylic & Vinyl Signage -->
-                <a href="signage.html"
-                    class="bg-creamSoft rounded-lg overflow-hidden flex flex-col h-full group relative shadow-soft hover:shadow-hover hover:-translate-y-[3px] transition-all duration-300 block">
-                    <div class="h-[330px] overflow-hidden relative">
-                        <img src="images/acrylic_wedding_sign.png" alt="Acrylic Wedding Sign"
-                            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
-                    </div>
-
-                    <!-- Content area -->
-                    <div class="px-10 pb-10 pt-5 relative flex-grow flex flex-col">
-                        <!-- Icon Circle -->
-                        <div
-                            class="absolute -top-8 left-10 w-[64px] h-[64px] bg-creamSoft rounded-full flex items-center justify-center border border-borderLight">
-                            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="#3F6848"
-                                stroke-width="1.5">
-                                <path d="M16 28v-10" stroke-linecap="round" />
-                                <path d="M16 18c-2-3-6-6-10-6 0 5 4 9 10 9" fill="none" />
-                                <path d="M16 18c2-3 6-6 10-6 0 5-4 9-10 9" fill="none" />
-                                <path d="M16 14c-1.5-3-4-6-8-7 1 5 4 8 8 9" fill="none" />
-                                <path d="M16 14c1.5-3 4-6 8-7-1 5-4 8-8 9" fill="none" />
-                                <circle cx="16" cy="8" r="2.5" fill="none" />
-                            </svg>
-                        </div>
-
-                        <h3
-                            class="font-display text-[42px] leading-[42px] text-green800 uppercase mb-[18px] mt-8 tracking-[0.01em]">
-                            Acrylic & Vinyl Signage</h3>
-                        <p class="font-sans text-textSecondary text-[16px] leading-[28px] mb-8 max-w-[300px]">
-                            Custom acrylic signs, decals, and statement pieces for events and spaces.
-                        </p>
-                        <div
-                            class="mt-auto inline-flex items-center gap-3 text-green800 font-sans font-bold tracking-[0.04em] text-[15px] uppercase group-hover:opacity-80 transition-opacity">
-                            Explore
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M5 12h14" />
-                                <path d="m12 5 7 7-7 7" />
-                            </svg>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Card 2: Vinyl Printing -->
-                <a href="vinyl.html"
-                    class="bg-yellowSoft rounded-lg overflow-hidden flex flex-col h-full group relative shadow-soft hover:shadow-hover hover:-translate-y-[3px] transition-all duration-300 block"
-                    style="background: linear-gradient(180deg, #FFF1C8, #F9E7B5);">
-                    <div class="h-[330px] overflow-hidden relative">
-                        <img src="images/signage.png" alt="Vinyl Printing"
-                            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
-                    </div>
-
-                    <!-- Content area -->
-                    <div class="px-10 pb-10 pt-5 relative flex-grow flex flex-col">
-                        <!-- Icon Circle -->
-                        <div
-                            class="absolute -top-8 left-10 w-[64px] h-[64px] bg-yellowSoft rounded-full flex items-center justify-center border border-borderYellow">
-                            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="#3F6848"
-                                stroke-width="1.5">
-                                <rect x="6" y="12" width="20" height="10" rx="2" fill="none" />
-                                <path d="M10 12V7h12v5" fill="none" />
-                                <path d="M10 22v4h12v-4" fill="none" />
-                                <line x1="13" y1="25" x2="19" y2="25" />
-                            </svg>
-                        </div>
-
-                        <h3
-                            class="font-display text-[42px] leading-[42px] text-green800 uppercase mb-[18px] mt-8 tracking-[0.01em]">
-                            Vinyl Printing</h3>
-                        <p class="font-sans text-textSecondary text-[16px] leading-[28px] mb-8 max-w-[300px]">
-                            Upload your design or work with us to create custom prints for your event.
-                        </p>
-                        <div
-                            class="mt-auto inline-flex items-center gap-3 text-green800 font-sans font-bold tracking-[0.04em] text-[15px] uppercase group-hover:opacity-80 transition-opacity">
-                            Get Started
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M5 12h14" />
-                                <path d="m12 5 7 7-7 7" />
-                            </svg>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-        </section>
-
-        <!-- How It Works Section -->
-        <section class="max-w-[1120px] mx-auto px-6 pb-24 pt-2">
-            <div class="bg-creamSoft/75 rounded-xl py-16 px-8 md:px-14 text-center border border-borderLight/30">
-                <span
-                    class="font-sans font-bold text-[14px] tracking-[0.18em] text-green800 uppercase mb-[14px] block">How
-                    It Works</span>
-                <h2 class="font-display text-[56px] leading-[56px] font-normal tracking-[0.01em] text-textPrimary uppercase mb-12">
-                    <span class="block">Simple steps.</span>
-                    <span class="block">Beautiful results.</span>
-                </h2>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-12">
-                    <!-- Step 1 -->
-                    <div class="flex flex-col items-center px-4 relative z-10">
-                        <div class="relative mb-5">
-                            <div
-                                class="w-[78px] h-[78px] rounded-full border border-borderLight flex items-center justify-center bg-transparent">
-                                <img src="icons/cart.svg" alt="Choose Your Product" class="w-[28px] h-[28px]"
-                                    style="filter: invert(35%) sepia(13%) saturate(1458%) hue-rotate(76deg) brightness(95%) contrast(87%);">
-                            </div>
-                            <div
-                                class="absolute -top-1 -left-1 w-[22px] h-[22px] bg-green800 text-textInverse rounded-full flex items-center justify-center font-sans font-bold text-[10px]">
-                                1</div>
-                        </div>
-                        <h4 class="font-display text-[28px] leading-[28px] font-normal tracking-[0.01em] text-textPrimary uppercase mb-2">Choose Your
-                            Product</h4>
-                        <p class="font-sans text-textSecondary text-[14px] leading-[24px] max-w-[200px]">
-                            Browse our categories and select the product that fits your vision.
-                        </p>
-                    </div>
-
-                    <!-- Step 2 -->
-                    <div class="flex flex-col items-center px-4 relative z-10">
-                        <div class="relative mb-5">
-                            <div
-                                class="w-[78px] h-[78px] rounded-full border border-borderLight flex items-center justify-center bg-transparent">
-                                <img src="icons/custom-made.svg" alt="Customize or Upload" class="w-[32px] h-[32px]"
-                                    style="filter: invert(35%) sepia(13%) saturate(1458%) hue-rotate(76deg) brightness(95%) contrast(87%);">
-                            </div>
-                            <div
-                                class="absolute -top-1 -left-1 w-[22px] h-[22px] bg-green800 text-textInverse rounded-full flex items-center justify-center font-sans font-bold text-[10px]">
-                                2</div>
-                        </div>
-                        <h4 class="font-display text-[28px] leading-[28px] font-normal tracking-[0.01em] text-textPrimary uppercase mb-2">Customize or
-                            Upload</h4>
-                        <p class="font-sans text-textSecondary text-[14px] leading-[24px] max-w-[200px]">
-                            Personalize the details or upload your artwork and add it to your cart.
-                        </p>
-                    </div>
-
-                    <!-- Step 3 -->
-                    <div class="flex flex-col items-center px-4 relative z-10">
-                        <div class="relative mb-5">
-                            <div
-                                class="w-[78px] h-[78px] rounded-full border border-borderLight flex items-center justify-center bg-transparent">
-                                <img src="icons/print-and-prepare.svg" alt="We Print & Prepare"
-                                    class="w-[32px] h-[32px]"
-                                    style="filter: invert(35%) sepia(13%) saturate(1458%) hue-rotate(76deg) brightness(95%) contrast(87%);">
-                            </div>
-                            <div
-                                class="absolute -top-1 -left-1 w-[22px] h-[22px] bg-green800 text-textInverse rounded-full flex items-center justify-center font-sans font-bold text-[10px]">
-                                3</div>
-                        </div>
-                        <h4 class="font-display text-[28px] leading-[28px] font-normal tracking-[0.01em] text-textPrimary uppercase mb-2">We Print &
-                            Prepare</h4>
-                        <p class="font-sans text-textSecondary text-[14px] leading-[24px] max-w-[200px]">
-                            We craft, print, and prepare your order with care for your special event.
-                        </p>
-                    </div>
+            
+            <!-- Content Left -->
+            <div class="flex items-center gap-8 relative z-10 w-full md:w-auto">
+                <div class="w-[80px] h-[80px] md:w-[90px] md:h-[90px] bg-[#3F6848] rounded-full flex items-center justify-center flex-shrink-0 shadow-sm relative">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L14 9L21 11L14 13L12 20L10 13L3 11L10 9L12 2Z" stroke="#ECCC73" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M18 18L19 21L22 22L19 23L18 26L17 23L14 22L17 21L18 18Z" stroke="#ECCC73" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M6 3L6.5 5L8.5 5.5L6.5 6L6 8L5.5 6L3.5 5.5L5.5 5L6 3Z" stroke="#ECCC73" stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <div class="max-w-[450px]">
+                    <h2 class="font-serif text-[28px] md:text-[32px] text-textPrimary leading-tight mb-2">Have a vision in mind?</h2>
+                    <p class="font-sans text-[14px] text-textSecondary leading-relaxed">
+                        Let's create something unforgettable together.<br>
+                        Tell us about your event and we'll bring it to life.
+                    </p>
                 </div>
             </div>
-        </section>
-
-    </main>
+            
+            <!-- Button Right -->
+            <div class="flex-shrink-0 relative z-10">
+                <a href="inquiry.html" class="inline-flex items-center gap-2 bg-transparent border border-[#4F5A4D] text-[#1F1D1A] font-sans text-[14px] font-semibold px-8 py-3.5 rounded-pill hover:bg-[#3F6848] hover:text-white hover:border-[#3F6848] transition-all">
+                    Start a Custom Inquiry &rarr;
+                </a>
+            </div>
+            
+            <!-- Decorative flower right bottom -->
+            <img src="illustrations/flower.svg" alt="" class="absolute -bottom-16 -right-12 w-64 opacity-[0.15] pointer-events-none" style="filter: hue-rotate(85deg) saturate(30%) brightness(80%);">
+        </div>
+    </section>
 
     <footer class="bg-[#FBF8F0] w-full relative z-20 mt-auto pt-20">
         <div class="max-w-[1280px] mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-6 mb-16 items-start">
@@ -410,7 +406,7 @@
                 <ul class="space-y-3 font-sans text-[11px] text-[#4F5A4D]">
                     <li><a href="#" class="hover:text-[#2F5138] transition-colors">Rental Products</a></li>
                     <li><a href="signage.html" class="hover:text-[#2F5138] transition-colors">Signage & Event Details</a></li>
-                    <li><a href="#" class="hover:text-[#2F5138] transition-colors">Visual Showcase</a></li>
+                    <li><a href="visualshowcase.html" class="hover:text-[#2F5138] transition-colors">Visual Showcase</a></li>
                     <li><a href="#" class="hover:text-[#2F5138] transition-colors">Shop All</a></li>
                 </ul>
             </div>
@@ -473,7 +469,7 @@
         </button>
         <nav class="flex flex-col items-center gap-8 font-serif text-[32px] text-textPrimary text-center">
             <a href="index.html" class="hover:text-green800 transition-colors">Home</a>
-            <a href="signage.html" class="hover:text-green800 transition-colors text-green800">Signage & Event Details</a>
+            <a href="signage.html" class="hover:text-green800 transition-colors">Signage & Event Details</a>
             <a href="vinyl.html" class="hover:text-green800 transition-colors">Vinyl Printing</a>
             <a href="about.html" class="hover:text-green800 transition-colors">About</a>
             <a href="#" class="mt-4 bg-green800 text-textInverse font-sans text-[16px] font-semibold px-8 py-3 rounded-pill hover:bg-green900 transition-colors tracking-[0.02em]">Custom Inquiry</a>
@@ -511,5 +507,4 @@
         }
     </script>
 </body>
-
 </html>

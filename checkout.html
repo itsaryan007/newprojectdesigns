@@ -47,11 +47,11 @@
                     borderRadius: {
                         'xs': '6px',
                         'sm': '8px',
-                        'md': '14px',
-                        'lg': '18px',
+                        'md': '8px',
+                        'lg': '16px',
                         'xl': '24px',
-                        '2xl': '16px',
-                        'pill': '999px',
+                        '2xl': '24px',
+                        'pill': '24px',
                     },
                     boxShadow: {
                         'card': '0 12px 30px rgba(47, 81, 56, 0.12)',
@@ -105,27 +105,21 @@
     <!-- HEADER / NAVBAR                           -->
     <!-- ======================================== -->
     <header class="sticky top-0 z-40 bg-cream w-full h-[92px] border-b border-green800/20">
-        <div class="flex items-center justify-between px-6 lg:px-10 max-w-[1280px] mx-auto w-full h-full">
+        <div class="flex items-center justify-between px-6 max-w-[1400px] mx-auto w-full h-full">
             <!-- Logo -->
             <a href="index.html"
                 class="flex flex-col items-center justify-center leading-none tracking-wider text-textPrimary w-[145px] text-center flex-shrink-0">
-                <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg" class="w-[145px]">
-                    <text x="80" y="22" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="20"
-                        font-weight="600" fill="#1F1D1A" letter-spacing="4">NEW</text>
-                    <text x="80" y="48" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="24"
-                        font-weight="600" fill="#1F1D1A" letter-spacing="3">PROJECT</text>
-                    <text x="80" y="66" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8"
-                        font-weight="500" fill="#6D716A" letter-spacing="5">DESIGNS</text>
-                </svg>
+                <img src="images/logo.png" alt="New Project Designs" class="w-[145px] h-auto">
             </a>
 
             <!-- Navigation -->
             <nav class="hidden lg:flex items-center gap-7 font-sans text-[14px] font-medium text-textPrimary">
                 <a href="index.html" class="hover:text-green800 transition-colors pb-[6px]">Home</a>
-                <a href="signage.html" class="hover:text-green800 transition-colors pb-[6px]">Signage & Event
-                    Details</a>
-                <a href="vinyl.html" class="hover:text-green800 transition-colors pb-[6px]">Vinyl Printing</a>
+                <a href="signage.html" class="hover:text-green800 transition-colors pb-[6px]">Signage & Event Details</a>
+                <a href="category.html" class="hover:text-green800 transition-colors pb-[6px]">Rental Products</a>
+                <a href="visualshowcase.html" class="hover:text-green800 transition-colors pb-[6px]">Visual showcase</a>
                 <a href="about.html" class="hover:text-green800 transition-colors pb-[6px]">About</a>
+                <a href="contact.html" class="hover:text-green800 transition-colors pb-[6px]">Contact</a>
             </nav>
 
             <!-- Right Actions -->
@@ -150,7 +144,7 @@
                     </svg>
                 </button>
                 <!-- Cart Icon with Badge -->
-                <button aria-label="Cart"
+                <a href="shoppingcart.html" aria-label="Cart"
                     class="w-[38px] h-[38px] rounded-full bg-green800 text-textInverse flex items-center justify-center hover:opacity-80 transition-opacity relative">
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -160,9 +154,9 @@
                     </svg>
                     <span
                         class="absolute -top-1 -right-1 bg-yellow500 text-green800 text-[10px] font-bold w-[18px] h-[18px] flex items-center justify-center rounded-full">0</span>
-                </button>
+                </a>
                 <!-- Custom Inquiry Button -->
-                <a href="#"
+                <a href="custom.html"
                     class="hidden lg:flex items-center gap-2 bg-green800 text-textInverse font-sans text-[14px] font-semibold px-[22px] h-[40px] rounded-pill hover:bg-green900 transition-colors ml-1 tracking-[0.02em]">
                     Custom Inquiry
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
@@ -185,7 +179,7 @@
         </div>
     </header>
 
-    <main class="flex-grow relative z-10 max-w-[1280px] mx-auto w-full px-6 pt-10 pb-24">
+    <main class="flex-grow relative z-10 max-w-[1400px] mx-auto w-full px-6 pt-10 pb-24">
 
         <!-- Header & Stepper -->
         <div
@@ -767,9 +761,9 @@
                         <label class="font-sans text-[13px] text-textSecondary">Have a coupon code?</label>
                         <div class="flex gap-2">
                             <input type="text" placeholder="Enter coupon code"
-                                class="w-full bg-[#FBF8F0] border border-borderLight rounded-[8px] px-4 py-2.5 font-sans text-[13px] focus:outline-none focus:border-green800 transition-colors">
+                                class="w-full bg-[#FBF8F0] border border-borderLight rounded-[24px] px-4 py-2.5 font-sans text-[13px] focus:outline-none focus:border-green800 transition-colors">
                             <button
-                                class="border border-[#DDD5C6] bg-white text-textPrimary font-sans text-[14px] font-medium px-6 py-2.5 rounded-[8px] hover:bg-[#FBF8F0] transition-colors shadow-sm">Apply</button>
+                                class="border border-[#DDD5C6] bg-white text-textPrimary font-sans text-[14px] font-medium px-6 py-2.5 rounded-[24px] hover:bg-[#FBF8F0] transition-colors shadow-sm">Apply</button>
                         </div>
                     </div>
 
@@ -799,8 +793,13 @@
                             class="w-full bg-white border border-[#DDD5C6] text-textPrimary font-sans text-[15px] font-medium h-[52px] rounded-pill hover:bg-[#FBF8F0] transition-colors tracking-[0.01em]">
                             Place Order (Pay 60% Now)
                         </button>
-                        <a href="cart2.html"
-                            class="w-full flex items-center justify-center bg-white border border-[#DDD5C6] text-textPrimary font-sans text-[15px] font-medium h-[52px] rounded-pill hover:bg-[#FBF8F0] transition-colors tracking-[0.01em]">
+                        <a href="shoppingcart.html"
+                            class="self-center flex items-center gap-2 text-textSecondary hover:text-green800 transition-all font-sans text-[14px] font-medium py-2 mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 12H5" />
+                                <path d="m12 19-7-7 7-7" />
+                            </svg>
                             Back to Cart
                         </a>
                     </div>
@@ -811,21 +810,14 @@
     </main>
 
     <footer class="bg-[#FBF8F0] w-full relative z-20 mt-auto pt-20">
-        <div class="max-w-[1280px] mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-6 mb-16 items-start">
+        <div class="max-w-[1400px] mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-6 mb-16 items-start">
 
             <!-- Column 1 (Brand) -->
             <div class="md:col-span-4 pr-0 md:pr-6">
                 <!-- Logo -->
                 <a href="index.html"
                     class="flex flex-col items-start leading-none tracking-wider text-textPrimary w-[100px] mb-6 hover:opacity-80 transition-opacity">
-                    <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg" class="w-[100px]">
-                        <text x="80" y="22" text-anchor="middle" font-family="'Cormorant Garamond', serif"
-                            font-size="20" font-weight="600" fill="#1F3E29" letter-spacing="4">NEW</text>
-                        <text x="80" y="48" text-anchor="middle" font-family="'Cormorant Garamond', serif"
-                            font-size="24" font-weight="600" fill="#1F3E29" letter-spacing="3">PROJECT</text>
-                        <text x="80" y="66" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8"
-                            font-weight="500" fill="#6D716A" letter-spacing="5">DESIGNS</text>
-                    </svg>
+                    <img src="images/logo.png" alt="New Project Designs" class="w-[100px] h-auto">
                 </a>
                 <p class="font-sans text-[11px] text-[#4F5A4D] leading-[1.6] mb-5 max-w-[280px]">
                     We provide premium event décor, props, lighting, and celebration essentials for all types of events
@@ -870,7 +862,7 @@
             <div class="md:col-span-2">
                 <h3 class="font-sans text-[11px] text-[#1F1D1A] font-bold uppercase tracking-wider mb-5">Shop</h3>
                 <ul class="space-y-3 font-sans text-[11px] text-[#4F5A4D]">
-                    <li><a href="#" class="hover:text-[#2F5138] transition-colors">Rental Products</a></li>
+                    <li><a href="category.html" class="hover:text-[#2F5138] transition-colors">Rental Products</a></li>
                     <li><a href="signage.html" class="hover:text-[#2F5138] transition-colors">Signage & Event
                             Details</a></li>
                     <li><a href="visualshowcase.html" class="hover:text-[#2F5138] transition-colors">Visual Showcase</a>
@@ -923,7 +915,7 @@
 
         <!-- Bottom Bar -->
         <div class="bg-[#1F3E29] py-4 w-full relative">
-            <div class="max-w-[1280px] mx-auto px-6 flex items-center justify-center relative">
+            <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-center relative">
                 <span class="font-sans text-[11px] text-[#FBF8F0]/80">
                     &copy; 2024 New Project Designs. All rights reserved.
                 </span>
@@ -946,14 +938,14 @@
                 <line x1="6" y1="6" x2="18" y2="18"></line>
             </svg>
         </button>
-        <nav class="flex flex-col items-center gap-8 font-serif text-[32px] text-textPrimary text-center">
+        <nav class="flex flex-col items-center gap-8 font-display text-[32px] uppercase tracking-widest text-textPrimary text-center">
             <a href="index.html" class="hover:text-green800 transition-colors">Home</a>
             <a href="signage.html" class="hover:text-green800 transition-colors">Signage & Event Details</a>
-            <a href="vinyl.html" class="hover:text-green800 transition-colors">Vinyl Printing</a>
+            <a href="category.html" class="hover:text-green800 transition-colors">Rental Products</a>
+            <a href="visualshowcase.html" class="hover:text-green800 transition-colors">Visual showcase</a>
             <a href="about.html" class="hover:text-green800 transition-colors">About</a>
-            <a href="#"
-                class="mt-4 bg-green800 text-textInverse font-sans text-[16px] font-semibold px-8 py-3 rounded-pill hover:bg-green900 transition-colors tracking-[0.02em]">Custom
-                Inquiry</a>
+            <a href="contact.html" class="hover:text-green800 transition-colors">Contact</a>
+            <a href="custom.html" class="mt-4 bg-green800 text-textInverse font-sans text-[16px] font-semibold px-8 py-3 rounded-pill hover:bg-green900 transition-colors tracking-[0.02em]">Custom Inquiry</a>
         </nav>
         <div class="flex items-center gap-4 mt-12">
             <!-- Email Icon -->

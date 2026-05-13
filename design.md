@@ -56,11 +56,11 @@ The color scheme is natural, earthy, and warm, focusing on rich greens and soft 
 
 ### Border Radii
 *   **Extra Small:** `6px`
-*   **Small:** `8px`
-*   **Medium:** `14px`
-*   **Large:** `18px`
-*   **Extra Large:** `24px`
-*   **Pill (Buttons):** `999px`
+*   **Small / Form Fields:** `8px`
+*   **Medium:** `12px`
+*   **Large / Cards:** `16px`
+*   **Extra Large / Buttons:** `24px`
+*   **Pill (Buttons):** `24px`
 
 ### Global CSS Details
 *   **Text Selection:** Selected text uses `#3F6848` (Green 800) background with `#FBF8F0` text.
@@ -70,4 +70,4 @@ The color scheme is natural, earthy, and warm, focusing on rich greens and soft 
 
 *   **Buttons / Links:** Primary actions use `bg-green800` with pill shapes. Hover states trigger an opacity reduction (`hover:opacity-80`) rather than a color change.
 *   **Cards:** Interactive cards use a smooth upward translation (`hover:-translate-y-[3px]`), swap to the stronger `shadow-hover`, and scale their inner images slightly (`group-hover:scale-105`) over a 700ms duration for a premium feel.
-*   **Overlines:** Section markers (like "SHOP EVENT DETAILS") use `font-sans`, uppercase formatting, `text-[14px]`, bold weight, and very wide letter spacing (`tracking-[0.18em]`).
+*   **Overlines:** Section markers (like "SHOP EVENT DETAILS") use the brand gold color (`text-[#B89632]`), `font-sans`, uppercase formatting, `text-[14px]`, bold weight, and very wide letter spacing (`tracking-[0.18em]`).

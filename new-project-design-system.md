@@ -323,22 +323,23 @@ body {
 :root {
   --radius-xs: 6px;
   --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 18px;
-  --radius-xl: 24px;
-  --radius-pill: 999px;
+  --radius-md: 8px; /* Standardized for inputs/textboxes */
+  --radius-lg: 16px;
+  --radius-xl: 24px; /* Standardized for buttons */
+  --radius-pill: 24px; /* Updated for standardized 24px button look */
 }
 ```
 
 | Element | Radius |
 |---|---:|
 | Small badges | `--radius-pill` |
-| Buttons | `--radius-pill` |
-| Product cards | `--radius-lg` |
+| Buttons | `--radius-xl` (24px) |
+| Inputs / Text boxes | `--radius-md` (8px) |
+| Product cards | `--radius-lg` (16px) |
 | Category cards | `--radius-lg` to `--radius-xl` |
-| Image thumbnails | `--radius-md` |
-| Upload zones | `--radius-md` |
-| Info strips | `--radius-md` |
+| Image thumbnails | `--radius-sm` (8px) |
+| Upload zones | `--radius-sm` (8px) |
+| Info strips | `--radius-sm` (8px) |
 | Footer strip | `0` |
 
 ---
